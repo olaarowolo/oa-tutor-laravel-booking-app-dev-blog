@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,a:hover{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+header.header-area {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    padding: 10px 0;
+}
+
+.logo a {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff7720;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.menu ul li a {
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+}
+.menu ul li.active a,
+.menu ul li a:hover{
+    background: #ff7720;
+    border-radius: 0 5px 0 10px;
+}
+
+
+.slider-item {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.slider-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #333;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: -1;
+}
+
+.slider-content p {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.slider-content h4 {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a.slider-btn {
+    display: inline-block;
+    color: #fff;
+    background: #ff7720;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 10px;
+    border-radius: 0 5px 0 10px;
+}
+
+
+.slider-area.owl-carousel .owl-nav button span {
+    font-size: 65px;
+    color: #ff7720;
+    font-weight: bold;
+}
+
+.slider-area.owl-carousel .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+
+.slider-area.owl-carousel .owl-nav button.owl-next {
+    right: 15px;
+    left: auto;
+    color: #fff;
+}
+
+.slider-area.owl-carousel .owl-dots button {
+    width: 20px;
+    height: 20px;
+    background: #ff7720;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.slider-area.owl-carousel .owl-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+
+.slider-area.owl-carousel .owl-dots button.active {
+    background: #fff;
+}

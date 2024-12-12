@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Card</title>
+
+    <link rel="shortcut icon" href="{{ asset('assets/img/blog/favicon.ico') }}" type="image/x-icon">
+  <script src="{{ asset('assets/js/blog.js') }}"></script>
+
+  <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/blog.css') }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<style>
+
+html {
+    font-family: "Inter", sans-serif;
+    font-size: var(--fs-base); /* base font-size (0.85rem = 13.6px) */
+    line-height: 1.8;
+  }
+
+
+.h1,
+  .h2,
+  .h3,
+  .h4 {
+    display: block;
+    color: var(--foreground-primary);
+  }
+      .blog-card-group { margin-bottom: 3rem; }
+  
+  .blog-card {
+    background: var(--background-primary);
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
+    transition: 0.25s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.1);
+  }
+  
+  .blog-card-banner { display: none; }
+
+  .blog-content-wrapper { padding: 10px 5px; }
+
+  .blog-topic {
+    background: var(--action-secondary);
+    color: var(--foreground-secondary);
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-topic:hover {
+    background: var(--foreground-secondary);
+    color: var(--action-secondary);
+  }
+
+  .dark-theme .blog-topic {
+    background: var(--action-primary);
+    color: var(--foreground-secondary);
+  }
+  
+  .dark-theme .blog-topic:hover {
+    background: var(--foreground-primary);
+    color: var(--action-primary);
+  }
+  
+  .text-tiny { font-size: var(--fs-5); }
+
+  .blog-text,
+  .profile-wrapper { display: none; }
+
+
+  .blog .wrapper-flex {
+      display:         flex;
+      justify-content: start;
+      align-items:     center;
+      gap: 10px;
+    }
+  
+    .profile-wrapper {
+      width:  56px;
+      height: 56px;
+      background: var(--action-primary);
+      padding: 3px;
+      border-radius: 50%;
+    }
+
+    .blog .wrapper {
+      flex-direction: column;
+      align-items: start;
+      gap: 0;
+    }
+  
+    header .flex-wrapper { display: none; }
+/*-----------------------------------*\ 
+    #BLOG SECTION
+  \*-----------------------------------*/
+  
+  .main {
+    background: var(--background-secondary);
+    padding: var(--py) 0;
+  }
+  
+  .blog .h2 {
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .blog-card-group { margin-bottom: 3rem; }
+  
+  .blog-card {
+    background: var(--background-primary);
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
+    transition: 0.25s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.1);
+  }
+  
+  .blog-card-banner { display: none; }
+  
+  .blog-content-wrapper { padding: 10px 5px; }
+  
+  .blog-topic {
+    background: var(--action-secondary);
+    color: var(--foreground-secondary);
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-topic:hover {
+    background: var(--foreground-secondary);
+    color: var(--action-secondary);
+  }
+  
+  .blog-card .h3 {
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-card .h3:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  
+  .blog-text,
+  .profile-wrapper { display: none; }
+  
+  .blog .wrapper {
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+    flex-wrap:       wrap;
+    gap: 15px;
+  }
+  
+  .blog .h4 { color: var(--foreground-secondary); }
+  
+  .blog .h4:hover { color: var(--accent); }
+  
+  .blog .text-sm {
+    display:     flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--foreground-tertiary);
+  }
+  
+  .blog .separator {
+    background: var(--foreground-tertiary);
+    margin-inline: 3px;
+    margin: 0 3px; /* fallback for margin-inline */
+    width:  3px;
+    height: 3px;
+    border-radius: 3px;
+  }
+  
+  .blog ion-icon { --ionicon-stroke-width: 50px; }
+  
+  .load-more {
+    margin-inline: auto;
+    margin: auto; /* fallback for margin-inline */
+    background: var(--foreground-secondary);
+    color: var(--background-secondary);
+    padding: 0.6875rem 1.1875rem;
+  }
+  
+  .load-more:hover { background: var(--accent); }
+  
+  
+</style>
+<body>
+    <div class="blog-card">
+
+        <div class="blog-card-banner">
+          <img src="./assets/images/blog-1.png" alt="Building microservices with Dropwizard, MongoDB & Docker"
+            width="250" class="blog-banner-img">
+        </div>
+
+        <div class="blog-content-wrapper">
+
+          <button class="blog-topic text-tiny">Database</button>
+
+          <h3>
+            <a href="#" class="h3">
+              Building microservices with Dropwizard, MongoDB & Docker
+            </a>
+          </h3>
+
+          <p class="blog-text">
+            This NoSQL database oriented to documents (by documents like JSON) combines some of the features from
+            relational
+            databases, easy to use and the multi-platform is the best option for scale up and have fault
+            tolerance, load balancing,
+            map reduce, etc.
+          </p>
+
+          <div class="wrapper-flex">
+
+            <div class="profile-wrapper">
+              <img src="./assets/images/author.png" alt="Julia Walker" width="50">
+            </div>
+
+            <div class="wrapper">
+              <a href="#" class="h4">Julia Walker</a>
+
+              <p class="text-sm">
+                <time datetime="2022-01-17">Jan 17, 2022</time>
+                <span class="separator"></span>
+                <ion-icon name="time-outline"></ion-icon>
+                <time datetime="PT3M">3 min</time>
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      
+      <script>
+        'use strict';
+
+// navbar variables
+const nav = document.querySelector('.mobile-nav');
+const navMenuBtn = document.querySelector('.nav-menu-btn');
+const navCloseBtn = document.querySelector('.nav-close-btn');
+
+
+// navToggle function
+const navToggleFunc = function () { nav.classList.toggle('active'); }
+
+navMenuBtn.addEventListener('click', navToggleFunc);
+navCloseBtn.addEventListener('click', navToggleFunc);
+
+
+
+// theme toggle variables
+const themeBtn = document.querySelectorAll('.theme-btn');
+
+
+for (let i = 0; i < themeBtn.length; i++) {
+
+  themeBtn[i].addEventListener('click', function () {
+
+    // toggle `light-theme` & `dark-theme` class from `body`
+    // when clicked `theme-btn`
+    document.body.classList.toggle('light-theme');
+    document.body.classList.toggle('dark-theme');
+
+    for (let i = 0; i < themeBtn.length; i++) {
+
+      // When the `theme-btn` is clicked,
+      // it toggles classes between `light` & `dark` for all `theme-btn`.
+      themeBtn[i].classList.toggle('light');
+      themeBtn[i].classList.toggle('dark');
+
+    }
+
+  })
+
+}
+      </script>
+</body>
+</html>
