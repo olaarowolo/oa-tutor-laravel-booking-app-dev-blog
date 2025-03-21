@@ -2,6 +2,8 @@
 @include('components.head')
 @include('partials.header')
 @section('title', 'About OA Tutors')
+@include('components.slider')
+
 @section('content')
     <div class="main">
         <div class="container">
@@ -12,7 +14,7 @@
                 <div class="px-5 py-24 mx-auto">
 
 
-                   
+
                     <div class="">
                         <h2 class="h2 title-font font-medium text-3xl mb-4 text-gray-900">About Us</h2>
                         <p>Welcome to OA Tutors!</p>

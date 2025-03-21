@@ -1,7 +1,7 @@
 <style>
     body {
         line-height: 1.5;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Inter', sans-serif;
     }
 
     * {

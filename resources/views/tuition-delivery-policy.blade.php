@@ -1,8 +1,9 @@
 @extends('layouts.app')
 @section('title', 'Booking Policy')
+@include('components.slider')
 @section('content')
     <section class="px-5 py-5 mx-auto flex flex-wrap items-center justify-center" id="services">
-        <main class="max-w-4xl w-full">
+        <main class="max-w-5xl w-full">
             <section class="mb-8">
                 <h2 class="text-2xl font-bold mb-4">OA Tutors Tuition Delivery Policy</h2>
                 <p><strong>Objective:</strong><br>

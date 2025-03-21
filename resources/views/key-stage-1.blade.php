@@ -2,9 +2,11 @@
 @include('components.head')
 @include('partials.header')
 @section('title', 'Key Stage 1 (KS1)')
+@include('components.slider')
 @section('content')
+@include('partials.prices.ks1-pricing')
     <section class="px-5 py-5 mx-auto flex flex-wrap items-center justify-center" id="ks1">
-        <main class="max-w-4xl w-full">
+        <main class="max-w-5xl w-full">
             <section class="mb-8">
                 <h2 class="text-2xl font-bold mb-4">Maths and English Tuition for KS1-KS2 (Primary 1-6)</h2>
                 <p>At tutor.olaarowolo.com, I provide personalised Maths and English tuition designed to help your child

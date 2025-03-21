@@ -3,6 +3,8 @@
 @include('components.head')
 
 @include('partials.header')
+@include('components.slider')
+
 @section('content')
 <div class="main">
     <div class="container">

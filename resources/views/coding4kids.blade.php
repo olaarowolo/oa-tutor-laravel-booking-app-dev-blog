@@ -2,9 +2,10 @@
 @include('components.head')
 @include('partials.header')
 @section('title', 'Coding for Kids')
+@include('components.slider')
 @section('content')
     <section class="container px-5 py-24 mx-auto flex flex-wrap items-center justify-center" id="services">
-        <main class="max-w-4xl w-full">
+        <main class="max-w-5xl w-full">
             <div
                 style="text-align: center; font-family: 'Courier New', Courier, monospace; background-color: #1e1e1e; color: #dcdcdc; padding: 20px; border-radius: 8px;">
                 <b>This is an opportunity to ignite your child&#39;s love for coding!</b><br />
@@ -37,6 +38,8 @@
             </section>
         </main>
     </section>
+
+
     </main>
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
@@ -54,4 +57,7 @@
             }
         }
     </script>
-@endsection
+@include('partials.pricing')@endsection
+
+
+

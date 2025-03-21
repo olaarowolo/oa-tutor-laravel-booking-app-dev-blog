@@ -2,8 +2,10 @@
     <div class="container">
         <nav class="navbar">
             <a href="/">
-                <img src="{{ asset('assets/img/oa-tutors-logo-black.png') }}" alt="OA Tutors logo" style="width: 8rem; height: 8rem;" class="logo-light">
-                <img src="{{ asset('assets/img/oa-tutors-logo-white.png') }}" alt="OA Tutors logo" style="width: 8rem; height: 8rem;" class="logo-dark">
+                <img src="{{ asset('assets/img/oa-tutors-logo-black.png') }}" alt="OA Tutors logo"
+                    style="width: 8rem; height: 8rem;" class="logo-light">
+                <img src="{{ asset('assets/img/oa-tutors-logo-white.png') }}" alt="OA Tutors logo"
+                    style="width: 8rem; height: 8rem;" class="logo-dark">
             </a>
             <div class="btn-group">
                 <button class="theme-btn theme-btn-mobile light">
@@ -34,12 +36,31 @@
                     <li>
                         <a href="/coding4kids" class="nav-link">Coding4Kids</a>
                     </li>
+
                     <li>
                         <a href="/booking-policy" class="nav-link">Our Policies</a>
                     </li>
-                    {{-- <li>
-                        <a href="/blog" class="nav-link">Blog</a>
-                    </li> --}}
+                    <li>
+                        <a href="/easterpromo" class="nav-link promo-highlight">Promo</a>
+                    </li>
+                    <style>
+                        .promo-highlight {
+                            background-color: #0b0c0b44;
+                            /* Highlighted yellow background */
+                            color: #000;
+                            /* Dark text for contrast */
+                            padding: 8px 12px;
+                            border-radius: 5px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            transition: all 0.3s ease-in-out;
+                            color: #fff
+                        }
+
+                        .promo-highlight:hover {
+                            color: #f00202;
+                        }
+                    </style>
                     {{-- <li>
                         <a href="#" class="nav-link">Contact</a>
                     </li> --}}
@@ -56,31 +77,31 @@
                 <div class="wrapper">
                     <p class="h3 nav-title">Main Menu</p>
                     <ul>
-                       <li class="nav-item">
+                        <li class="nav-item">
                             <a href="/" class="nav-link">Home</a>
                         </li>
-                       <li class="nav-item">
+                        <li class="nav-item">
                             <a href="/eleven-plus" class="nav-link">11+</a>
                         </li>
-                       <li class="nav-item">
+                        <li class="nav-item">
                             <a href="/key-stage-1" class="nav-link">KS-1</a>
                         </li>
-                       <li class="nav-item">
+                        <li class="nav-item">
                             <a href="/key-stage-2" class="nav-link">KS-2</a>
                         </li>
-                       <li class="nav-item">
+                        <li class="nav-item">
                             <a href="/key-stage-3" class="nav-link">KS-3</a>
                         </li>
-                       <li class="nav-item">
+                        <li class="nav-item">
                             <a href="/coding4kids" class="nav-link">Coding4Kids</a>
                         </li>
-                       <li class="nav-item">
+                        <li class="nav-item">
                             <a href="/booking-policy" class="nav-link">Our Policies</a>
                         </li>
-                       {{-- <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="/blog" class="nav-link">Blog</a>
                         </li> --}}
-                       {{-- <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="#" class="nav-link">Contact</a>
                         </li> --}}
 

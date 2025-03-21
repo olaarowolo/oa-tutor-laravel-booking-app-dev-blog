@@ -2,9 +2,11 @@
 @include('components.head')
 @include('partials.header')
 @section('title', 'Key Stage 3 (KS3)')
+@include('components.slider')
 @section('content')
-    <section class="px-5 py-5 mx-auto flex flex-wrap items-center justify-center" id="ks3">
-        <main class="max-w-4xl w-full">
+@include('partials.prices.ks3-pricing')
+<section class="px-5 py-5 mx-auto flex flex-wrap items-center justify-center" id="ks3">
+        <main class="max-w-5xl w-full">
             <section class="mb-8">
                 <h2 class="text-2xl font-bold mb-4">GCSE (KS-3)</h2>
                 <p>At tutor.olaarowolo.com, I provide personalised Maths and English tuition designed to help your child
@@ -12,6 +14,7 @@
                     genuine progress and develop a love for learning. With tailored support and a strong commitment to each
                     student&#39;s success, I offer an engaging and effective learning experience.</p>
             </section>
+
             <section class="mb-8">
                 <h2 class="text-2xl font-bold mb-4">What My Tuition Covers</h2>
                 <ul class="list-disc pl-6 space-y-2">
@@ -46,4 +49,5 @@
                 </ul>
             </section>
         </main>
-</section>@endsection
+    </section>
+@endsection

@@ -6,7 +6,7 @@
     <section class="px-5 py-5 mx-auto flex flex-wrap items-center justify-center">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap ">
-                <main class="max-w-4xl w-full">
+                <main class="max-w-5xl w-full">
                     <h1 class="text-3xl font-bold mb-4">Become an OA Tutor: Make a Difference While You Work!</h1>
                     <p class="mb-4">Are you passionate about education and have a flexible schedule? OA Tutors is seeking
                         talented and enthusiastic tutors to join our team!</p>

@@ -2,9 +2,10 @@
 @section('title', 'Coding for Kids')
 @include('components.head')
 @include('partials.header')
+@include('components.slider')
 @section('content')
     <section class="px-5 py-5 mx-auto flex flex-wrap items-center justify-center" id="services">
-        <main class="max-w-4xl w-full">
+        <main class="max-w-5xl w-full">
             <section class="mb-8">
                 <h2 class="text-2xl font-bold mb-4 section__title ">Welcome to 11+ Tutoring</h2>
                 <p>Thank you for inquiring about 11+ lessons with tutor.olaarowolo.com. I'm excited to support your child's

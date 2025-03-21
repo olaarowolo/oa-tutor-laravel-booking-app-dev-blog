@@ -72,3 +72,10 @@ Route::post('/subscribe', [NewsletterController::class, 'subscribe'])->name('new
 Route::get('recommended-product-lists', function () {
     return   view(view: 'pages.recommended-product-lists');
 });
+
+Route::get('/easterpromo', function () {
+    return view(view: 'pages.easterpromo');
+});
+Route::get('/pricing', function () {
+    return view(view: 'pages.pricing');
+});
