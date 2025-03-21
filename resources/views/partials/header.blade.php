@@ -38,6 +38,9 @@
                     </li>
 
                     <li>
+                        <a href="/pricing" class="nav-link">Packages</a>
+                    </li>
+                    <li>
                         <a href="/booking-policy" class="nav-link">Our Policies</a>
                     </li>
                     <li>
