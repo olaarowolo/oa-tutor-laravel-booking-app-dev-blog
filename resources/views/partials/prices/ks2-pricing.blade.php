@@ -31,9 +31,12 @@
                         <li>❌ No Mock Exams</li>
                     </ul>
                     <a href="#"
-                        class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-                        Get Started
+                        class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
+                        Book Now
                     </a>
+
+
                 </div>
             </li>
 
@@ -57,8 +60,9 @@
                         <li>✔ Chat & Email Support</li>
                     </ul>
                     <a href="#"
-                        class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-                        Get Started
+                        class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
+                        Book Now
                     </a>
                 </div>
             </li>
@@ -83,8 +87,9 @@
                         <li>✔ 24/7 Tutor Support</li>
                     </ul>
                     <a href="#"
-                        class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-                        Get Started
+                        class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
+                        Book Now
                     </a>
                 </div>
             </li>

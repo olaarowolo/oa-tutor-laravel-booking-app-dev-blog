@@ -29,9 +29,9 @@
               <li>✔ Email Support Only</li>
               <li>❌ No Exam Practice</li>
             </ul>
-            <a href="#" class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-              Get Started
-            </a>
+            <a href="#" class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
+                Book Now
+              </a>
           </div>
         </li>
 
@@ -53,9 +53,9 @@
               <li>✔ Chat & Email Support</li>
               <li>✔ Monthly Performance Reviews</li>
             </ul>
-            <a href="#" class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-              Get Started
-            </a>
+            <a href="#" class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
+                Book Now
+              </a>
           </div>
         </li>
 
@@ -77,9 +77,9 @@
               <li>✔ Personalized Study Tracker</li>
               <li>✔ 24/7 Tutor Support</li>
             </ul>
-            <a href="#" class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-              Get Started
-            </a>
+            <a href="#" class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
+                Book Now
+              </a>
           </div>
         </li>
       </ul>
