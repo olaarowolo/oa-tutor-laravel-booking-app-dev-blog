@@ -57,7 +57,6 @@
             }
         }
     </script>
-@include('partials.pricing')@endsection
 
 
 
