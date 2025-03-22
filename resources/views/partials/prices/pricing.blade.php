@@ -1,9 +1,3 @@
-@extends('layouts.app')
-@include('components.head')
-@include('partials.header')
-@section('title', 'Coding for Kids')
-@include('components.slider')
-@section('content')
 
 <!-- KS1 PRICING START -->
 <section id="pricing-ks1" class="pricing-1 md:py-24 py-12  bg-gray-100 dark:bg-[#fffdfd]">

@@ -38,7 +38,13 @@
         <!-- KS3 Standard Plan -->
         <li class="contents">
           <div class="flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border-2 border-light dark:border-dark shadow-md xl:p-8 dark:bg-[#171717] dark:text-white relative">
-            <h3 class="mb-4 text-2xl font-semibold">KS3 Standard Plan</h3>
+            <!-- RECOMMENDED -->
+            <div class="ribbon absolute -top-2 -right-2 h-40 w-40 overflow-hidden before:absolute before:top-0 before:left-0 before:border-4 before:border-light dark:before:border-dark after:absolute after:right-0 after:bottom-0 after:border-4 after:border-light dark:after:border-dark rounded-md">
+                <div class="absolute -right-14 top-[43px] w-60 rotate-45 bg-light dark:bg-dark py-2.5 text-center text-white shadow-md">
+                  Recommended
+                </div>
+              </div>
+  <h3 class="mb-4 text-2xl font-semibold">KS3 Standard Plan</h3>
             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
               Intermediate level for GCSE support with feedback.
             </p>
