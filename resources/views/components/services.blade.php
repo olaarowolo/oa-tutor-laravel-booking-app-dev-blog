@@ -384,7 +384,7 @@
             <p>Flying Colours</p>
         </a>
     </div>
-    <div class="tags">
+    <div class="tags contact">
         <h2 class="h2">Quote of the day</h2>
         <div class="wrapper">
             <p> <b>The illiterate of the 21st century will not be those who cannot read and write, but those who cannot
@@ -475,5 +475,5 @@
             @endif
         </div>
     </div>
-    
+
 </div>

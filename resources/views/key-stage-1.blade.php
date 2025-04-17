@@ -5,17 +5,17 @@
 @include('components.slider')
 @section('content')
 @include('partials.prices.ks1-pricing')
-    <section class="px-5 py-5 mx-auto flex flex-wrap items-center justify-center" id="ks1">
+    <section class="px-5 py-5 mx-auto flex flex-wrap items-center justify-center " id="ks1">
         <main class="max-w-5xl w-full">
             <section class="mb-8">
-                <h2 class="text-2xl font-bold mb-4">Maths and English Tuition for KS1-KS2 (Primary 1-6)</h2>
+                <h2 class="h2 text-2xl font-bold mb-4">Maths and English Tuition for KS1-KS2 (Primary 1-6)</h2>
                 <p>At tutor.olaarowolo.com, I provide personalised Maths and English tuition designed to help your child
                     make
                     genuine progress and develop a love for learning. With tailored support and a strong commitment to each
                     student&#39;s success, I offer an engaging and effective learning experience.</p>
             </section>
             <section class="mb-8">
-                <h2 class="text-2xl font-bold mb-4">What My Tuition Covers</h2>
+                <h2 class=" h2 text-2xl font-bold mb-4">What My Tuition Covers</h2>
                 <ul class="list-disc pl-6 space-y-2">
                     <li><b>Core Maths and English Skills:</b> Tailored for children aged 4-14, my lessons are aligned with
                         the
@@ -33,7 +33,7 @@
                 </ul>
             </section>
             <section class="mb-8">
-                <h2 class="text-2xl font-bold mb-4">Developing Skills for the Future</h2>
+                <h2 class=" h2 text-2xl font-bold mb-4">Developing Skills for the Future</h2>
                 <ul class="list-disc pl-6 space-y-2">
                     <li><b>Maths:</b> From basic addition to advanced topics like algebra, I cover all essential areas to
                         build
@@ -48,7 +48,7 @@
                 </ul>
             </section>
             <section class="mb-8">
-                <h2 class="text-2xl font-bold mb-4">About Me</h2>
+                <h2 class="h2 text-2xl font-bold mb-4">About Me</h2>
                 <p>As the sole tutor at tutor.olaarowolo.com, I bring passion and dedication to every lesson.
                     Here&acirc;&euro;&trade;s what you can expect:</p>
                 <ul class="list-disc pl-6 space-y-2">
