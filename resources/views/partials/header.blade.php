@@ -19,46 +19,66 @@
             <div class="flex-wrapper">
                 <ul class="desktop-nav">
                     <li><a href="/" class="nav-link">Home</a></li>
-                    <li><a href="/eleven-plus" class="nav-link">11+</a></li>
-                    <li><a href="/key-stage-1" class="nav-link">KS-1</a></li>
-                    <li><a href="/key-stage-2" class="nav-link">KS-2</a></li>
-                    <li><a href="/key-stage-3" class="nav-link">KS-3</a></li>
-                    <li><a href="/coding4kids" class="nav-link">Coding4Kids</a></li>
-                    <li><a href="/pricing" class="nav-link">Packages</a></li>
-                    <li><a href="/booking-policy" class="nav-link">Our Policies</a></li>
-
-                    <!-- NEW Learn Dropdown -->
                     <li class="nav-item dropdown">
-                        <a href="#" class=" start ">Start Learning</a>
+                        <a href="#" class="nav-link">Services <span class="promo"> Promo</span></a>
                         <ul class="dropdown-menu">
-                            <li class="nav-item dropdown">
-                                <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="https://classroom.google.com/" class="dropdown-item" target="_blank">Google Classroom</a></li>
-                                    <li><a href="https://www.splashlearn.com/" class="dropdown-item" target="_blank">Splash Learning</a></li>
-                                    <li><a href="https://www.khanacademy.org/" class="dropdown-item" target="_blank">Khan Academy</a></li>
-                                </ul>
+                            <li><a href="/key-stage-1" class="dropdown-item">KS-1</a></li>
+                            <li><a href="/key-stage-2" class="dropdown-item">KS-2 <span class="promo"> Promo</span></a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a href="/key-stage-2" class="dropdown-item">Key Stage 2</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="https://classroom.google.com/c/NzA4OTc5MTEyNTIw" class="dropdown-item" target="_blank">Google Classroom</a></li>
-                                    <li><a href="https://www.splashlearn.com/" class="dropdown-item" target="_blank">Splash Learning</a></li>
-                                    <li><a href="https://www.khanacademy.org/" class="dropdown-item" target="_blank">Khan Academy</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="/key-stage-3" class="dropdown-item">Key Stage 3</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="https://classroom.google.com/c/NzExNTg0ODA3MjU2" class="dropdown-item" target="_blank">Google Classroom</a></li>
-                                    <li><a href="https://uk.splashlearn.com/signin#/student" class="dropdown-item" target="_blank">Splash Learning</a></li>
-                                    <li><a href="https://www.khanacademy.org/teacher/class/ZFQJ2RC4/mastery/course-and-unit" class="dropdown-item" target="_blank">Khan Academy</a></li>
-                                </ul>
+                            <li><a href="/key-stage-3" class="dropdown-item ">KS-3 <span class="promo">
+                                        Promo</span></a>
                             </li>
                         </ul>
                     </li>
-
-
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Exam Prep</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/eleven-plus" class="dropdown-item">11+</a></li>
+                            <li><a href="/gcse" class="dropdown-item">GCSE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/pricing" class="nav-link">Packages</a></li>
+                    <li><a href="/booking-policy" class="nav-link">Our Policies</a></li>
+                    <!-- Learn Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="start">Start Learning</a>
+                        <div class="new">NEW<br>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item dropdown">
+                                    <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://classroom.google.com/" class="dropdown-item"
+                                                target="_blank">Google Classroom</a></li>
+                                        <li><a href="https://www.splashlearn.com/" class="dropdown-item"
+                                                target="_blank">Splash Learning</a></li>
+                                        <li><a href="https://www.khanacademy.org/" class="dropdown-item"
+                                                target="_blank">Khan Academy</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="/key-stage-2" class="dropdown-item">Key Stage 2</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://classroom.google.com/c/NzA4OTc5MTEyNTIw"
+                                                class="dropdown-item" target="_blank">Google Classroom</a></li>
+                                        <li><a href="https://www.splashlearn.com/" class="dropdown-item"
+                                                target="_blank">Splash Learning</a></li>
+                                        <li><a href="https://www.khanacademy.org/" class="dropdown-item"
+                                                target="_blank">Khan Academy</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="/key-stage-3" class="dropdown-item">Key Stage 3</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://classroom.google.com/c/NzExNTg0ODA3MjU2"
+                                                class="dropdown-item" target="_blank">Google Classroom</a></li>
+                                        <li><a href="https://uk.splashlearn.com/signin#/student" class="dropdown-item"
+                                                target="_blank">Splash Learning</a></li>
+                                        <li><a href="https://www.khanacademy.org/teacher/class/ZFQJ2RC4/mastery/course-and-unit"
+                                                class="dropdown-item" target="_blank">Khan Academy</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                    </li>
                 </ul>
 
                 <button class="theme-btn theme-btn-desktop light">
@@ -80,41 +100,46 @@
                         <li class="nav-item"><a href="/key-stage-1" class="nav-link">Key Stage 1</a></li>
                         <li class="nav-item"><a href="/key-stage-2" class="nav-link">Key Stage 2</a></li>
                         <li class="nav-item"><a href="/key-stage-3" class="nav-link">Key Stage 3</a></li>
-                        <li class="nav-item"><a href="/coding4kids" class="nav-link">Coding4Kids</a></li>
                         <li class="nav-item"><a href="/pricing" class="nav-link">Packages</a></li>
                         <li class="nav-item"><a href="/booking-policy" class="nav-link">Our Policies</a></li>
-                        <!-- Learn Dropdown for Mobile -->
                         <li class="nav-item dropdown">
-                            <a href="#" class=" start ">Start Learning</a>
+                            <a href="#" class="start">Start Learning</a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item dropdown">
-                                    <a href=" " class="dropdown-item">Key Stage 1</a>
+                                    <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="https://classroom.google.com/" class="dropdown-item" target="_blank">Google Classroom</a></li>
-                                        <li><a href="https://www.splashlearn.com/" class="dropdown-item" target="_blank">Splash Learning</a></li>
-                                        <li><a href="https://www.khanacademy.org/" class="dropdown-item" target="_blank">Khan Academy</a></li>
+                                        <li><a href="https://classroom.google.com/" class="dropdown-item"
+                                                target="_blank">Google Classroom</a></li>
+                                        <li><a href="https://www.splashlearn.com/" class="dropdown-item"
+                                                target="_blank">Splash Learning</a></li>
+                                        <li><a href="https://www.khanacademy.org/" class="dropdown-item"
+                                                target="_blank">Khan Academy</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a href=" " class="dropdown-item">Key Stage 2</a>
+                                    <a href="/key-stage-2" class="dropdown-item">Key Stage 2</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="https://classroom.google.com/c/NzA4OTc5MTEyNTIw" class="dropdown-item" target="_blank">Google Classroom</a></li>
-                                        <li><a href="https://www.splashlearn.com/" class="dropdown-item" target="_blank">Splash Learning</a></li>
-                                        <li><a href="https://www.khanacademy.org/" class="dropdown-item" target="_blank">Khan Academy</a></li>
+                                        <li><a href="https://classroom.google.com/c/NzA4OTc5MTEyNTIw"
+                                                class="dropdown-item" target="_blank">Google Classroom</a></li>
+                                        <li><a href="https://www.splashlearn.com/" class="dropdown-item"
+                                                target="_blank">Splash Learning</a></li>
+                                        <li><a href="https://www.khanacademy.org/" class="dropdown-item"
+                                                target="_blank">Khan Academy</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a href=" " class="dropdown-item">Key Stage 3</a>
+                                    <a href="/key-stage-3" class="dropdown-item">Key Stage 3</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="https://classroom.google.com/c/NzExNTg0ODA3MjU2" class="dropdown-item" target="_blank">Google Classroom</a></li>
-                                        <li><a href="https://uk.splashlearn.com/signin#/student" class="dropdown-item" target="_blank">Splash Learning</a></li>
-                                        <li><a href="https://www.khanacademy.org/teacher/class/ZFQJ2RC4/mastery/course-and-unit" class="dropdown-item" target="_blank">Khan Academy</a></li>
+                                        <li><a href="https://classroom.google.com/c/NzExNTg0ODA3MjU2"
+                                                class="dropdown-item" target="_blank">Google Classroom</a></li>
+                                        <li><a href="https://uk.splashlearn.com/signin#/student" class="dropdown-item"
+                                                target="_blank">Splash Learning</a></li>
+                                        <li><a href="https://www.khanacademy.org/teacher/class/ZFQJ2RC4/mastery/course-and-unit"
+                                                class="dropdown-item" target="_blank">Khan Academy</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-
                     </ul>
                 </div>
                 <div>
@@ -130,56 +155,103 @@
     </div>
 </header>
 
+
 <style>
-.nav-item {
-    position: relative;
-}
+    .nav-item {
+        position: relative;
+    }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 200px;
-    background-color: #f1f1f1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-    list-style: none;
-    padding: 0;
-}
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 200px;
+        background-color: #f1f1f1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        list-style: none;
+        padding: 0;
+    }
 
-.dropdown-item {
-    display: block;
-    padding: 10px 10px;
-    text-decoration: none;
-    color: #333;
-    white-space: nowrap;
-}
+    .dropdown-item {
+        display: block;
+        padding: 10px 10px;
+        text-decoration: none;
+        color: #333;
+        white-space: nowrap;
+    }
 
-.dropdown-item:hover {
-    background-color: #ddd;
-}
+    .dropdown-item:hover {
+        background-color: #ddd;
+    }
 
-.nav-item:hover > .dropdown-menu {
-    display: block;
-}
+    .nav-item:hover>.dropdown-menu {
+        display: block;
+    }
 
-.dropdown-menu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-left: 0.1rem;
-    margin-top: -0.2rem;
-}
+    .dropdown-menu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-left: 0.1rem;
+        margin-top: -0.2rem;
+    }
 
+    .start {
+        color: rgb(255, 255, 255);
+        background: var(--accent);
+        font-family: Inherit;
+        font-size: inherit;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0.5rem .5rem;
+        border-radius: 5px
+    }
 
-                        .start {
-                            color: #fff;
-                            background: green;
-                                padding: 0.6875rem 1.1875rem;
+    .start:hover {
+        background: green;
+        color: #fff;
+    }
 
-                        }
-                        
-                         .start:hover {
-                            background: red;
-                        }
+    .new {
+        font-family: Inherit;
+        color: #fff;
+        background-color: #479211;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 1.2;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 4px;
+
+    }
+
+    .promo {
+        font-family: Inherit;
+        color: #fff;
+        background-color: #921a11;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 1.2;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+        margin-left: 0rem;
+        margin-top: 0rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 4px;
+
+    }
 </style>

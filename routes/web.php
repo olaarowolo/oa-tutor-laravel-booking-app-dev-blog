@@ -21,6 +21,9 @@ Route::get('/coding4kids', function () {
 Route::get('eleven-plus', function () {
     return view('11+');
 });
+Route::get('gcse', function () {
+    return view('key-stage-3');
+});
 Route::get('key-stage-1', function () {
     return   view(view: 'key-stage-1');
 });
@@ -79,3 +82,5 @@ Route::get('/easterpromo', function () {
 Route::get('/pricing', function () {
     return view(view: 'pages.pricing');
 });
+
+
