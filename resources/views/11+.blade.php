@@ -4,6 +4,7 @@
 @include('partials.header')
 @include('components.slider')
 @section('content')
+@include('components.backtoschool-slider')
 
 <!-- Services Offered -->
 <section class="hero2 px-5 py-5 mx-auto flex flex-wrap items-center justify-center" class="text-gray-600

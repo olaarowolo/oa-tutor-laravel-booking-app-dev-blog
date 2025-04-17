@@ -4,83 +4,49 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\BookingPolicyController;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\TuitionController;
 
+// Home Pages
+Route::view('/', 'home');
+Route::view('/welcome', 'welcome');
+Route::view('/about', 'about');
+Route::view('/coding4kids', 'coding4kids');
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/welcome', function () {
-    return view('welcome');
-});
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/coding4kids', function () {
-    return  view('coding4kids');
-});
-Route::get('eleven-plus', function () {
-    return view('11+');
-});
-Route::get('gcse', function () {
-    return view('key-stage-3');
-});
-Route::get('key-stage-1', function () {
-    return   view(view: 'key-stage-1');
-});
-Route::get('key-stage-2', function () {
-    return   view(view: 'key-stage-2');
-});
-Route::get('key-stage-3', function () {
-    return   view(view: 'key-stage-3');
-});
-Route::get('policies', function () {
-    return   view(view: 'docs/policies');
-});
-Route::get('session-policy', function () {
-    return   view(view: 'docs.missed-session-policy');
-});
-Route::get('booking-policy', [BookingPolicyController::class, 'index']);
+// Tuition Levels
+Route::view('/eleven-plus', '11+');
+Route::view('/gcse', 'key-stage-3'); // Double check if this is intentional
+Route::view('/key-stage-1', 'key-stage-1');
+Route::view('/key-stage-2', 'key-stage-2');
+Route::view('/key-stage-3', 'key-stage-3');
 
-Route::get('tuition-delivery-policy', function () {
-    return   view(view: 'docs/tuition-delivery-policy');
-});
-Route::get('dressing-policy', function () {
-    return   view(view: 'docs/dress-policy');
-});
-Route::get('terms', function () {
-    return   view(view: 'docs/terms');
-});
-Route::get('privacy-policy', function () {
-    return   view(view: 'docs/privacy-policy');
-});
-// BLOG
-// routes/web.php
-Route::get('blog', function () {
-    return view('blog.home');
-});
-// routes/web.php
-Route::get('/blog/national-curriculum', function () {
-    return view('blog.national_curriculum');
-});
-// routes/web.php
-Route::get('/join-oa-tutors', function () {
-    return view('docs.join-oa-tutors');
-});
+// Policies
+Route::view('/policies', 'docs.policies');
+Route::view('/session-policy', 'docs.missed-session-policy');
+Route::view('/tuition-delivery-policy', 'docs.tuition-delivery-policy');
+Route::view('/dressing-policy', 'docs.dress-policy');
+Route::view('/terms', 'docs.terms');
+Route::view('/privacy-policy', 'docs.privacy-policy');
+Route::get('/booking-policy', [BookingPolicyController::class, 'index']);
 Route::get('/policies', [PolicyController::class, 'showPolicies']);
 
+// Blog
+Route::prefix('blog')->group(function () {
+    Route::view('/', 'blog.home');
+    Route::view('/national-curriculum', 'blog.national_curriculum');
+});
 
-// routes/web.php
+// Misc Pages
+Route::view('/join-oa-tutors', 'docs.join-oa-tutors');
+Route::view('/recommended-product-lists', 'pages.recommended-product-lists');
+Route::view('/easterpromo', 'pages.easterpromo');
+Route::view('/pricing', 'pages.pricing');
+Route::view('/backtoschool/packages', 'pages.backtoschool.packages');
+
+
+// Back to School Promo
+Route::view('/backtoschool', 'backtoschool');
+Route::view('/backtoschool/packages', 'pages.packages');
+Route::post('/backtoschool/register', [TuitionController::class, 'register'])->name('tuition.register');
+
+// Newsletter
 Route::post('/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
-
-Route::get('recommended-product-lists', function () {
-    return   view(view: 'pages.recommended-product-lists');
-});
-
-Route::get('/easterpromo', function () {
-    return view(view: 'pages.easterpromo');
-});
-Route::get('/pricing', function () {
-    return view(view: 'pages.pricing');
-});
-
-

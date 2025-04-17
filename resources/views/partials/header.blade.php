@@ -39,6 +39,8 @@
                     </li>
                     <li><a href="/pricing" class="nav-link">Packages</a></li>
                     <li><a href="/booking-policy" class="nav-link">Our Policies</a></li>
+                    <li><a href="/backtoschool" class="nav-link">Promo/Offer</a>                        <div class="hot">HOT<br>
+                    </li>
                     <!-- Learn Dropdown -->
                     <li class="nav-item dropdown">
                         <a href="#" class="start">Start Learning</a>
@@ -56,7 +58,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a href="/key-stage-2" class="dropdown-item">Key Stage 2</a>
+                                    <a href="/key-stage-2" class="dropdown-item">Key Stage 2 </a>
                                     <ul class="dropdown-menu">
                                         <li><a href="https://classroom.google.com/c/NzA4OTc5MTEyNTIw"
                                                 class="dropdown-item" target="_blank">Google Classroom</a></li>
@@ -98,12 +100,14 @@
                         <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="/eleven-plus" class="nav-link">11+</a></li>
                         <li class="nav-item"><a href="/key-stage-1" class="nav-link">Key Stage 1</a></li>
-                        <li class="nav-item"><a href="/key-stage-2" class="nav-link">Key Stage 2</a></li>
-                        <li class="nav-item"><a href="/key-stage-3" class="nav-link">Key Stage 3</a></li>
+                        <li class="nav-item"><a href="/key-stage-2" class="nav-link">Key Stage 2</a> <span class="promo"> Promo</span></li>
+                        <li class="nav-item"><a href="/key-stage-3" class="nav-link">Key Stage 3</a><span class="promo"> Promo</span></li>
                         <li class="nav-item"><a href="/pricing" class="nav-link">Packages</a></li>
                         <li class="nav-item"><a href="/booking-policy" class="nav-link">Our Policies</a></li>
+                        <li class="nav-item"><a href="/backtoschool" class="nav-link">Promo/Offer</a> <span class="hot"> HOT</span> </li>
+
                         <li class="nav-item dropdown">
-                            <a href="#" class="start">Start Learning</a>
+                            <a href="#" class="start">Start Learning</a> <span class="new"> New</span>
                             <ul class="dropdown-menu">
                                 <li class="nav-item dropdown">
                                     <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
@@ -213,6 +217,26 @@
         color: #fff;
     }
 
+    .hot {
+        font-family: Inherit;
+        color: #fff;
+        background-color: #e91e63;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 1.2;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 4px;
+
+    }
     .new {
         font-family: Inherit;
         color: #fff;
