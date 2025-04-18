@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OA Tutors</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/oa-tutors-logo-white.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/oa-tutors-logo-white.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/oa-tutors-logo-white.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets\img\oa-tutors-logo-blue-CF.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets\img\oa-tutors-logo-blue-CF.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets\img\oa-tutors-logo-blue-CF.jpg" />
     <!-- Meta Tags -->
     <meta name="description"
         content="Unlock your child's potential with personalised one-to-one lessons. We are offering you a one-stop path to success." />
@@ -15,7 +15,7 @@
     <meta property="og:title" content="OA Tutors 📚" />
     <meta property="og:description"
         content="Unlock your child's potential with personalised one-to-one lessons. We are offering you a one-stop path to success." />
-    <meta property="og:image" content="assets/favicon_io/oa-logo-yellow-bgrd-480x480.png" />
+    <meta property="og:image" content="assets\img\oa-tutors-logo-blue-CF.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="tutor.olaarowolo.com" />
     <meta property="twitter:url" content="https://www.tutor.olaarowolo.com/" />

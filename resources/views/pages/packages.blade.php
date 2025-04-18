@@ -1,4 +1,10 @@
 @extends('layouts.app')
+
+@section('meta')
+<meta property="og:image" content="{{ asset('assets/img/fliers/Back_to_School-Summer2025.png') }}" />
+<meta property="og:description" content="Welcome to our Back to School Tuition Program at tutor.olaarowolo.com. Whether your child is preparing for Key Stage 2, Key Stage 3, the 11+ Exams, or their GCSEs, this program is designed to boost their confidence and academic performance as the new school term begins." />
+@endsection
+
 @section('title', 'Coding for Kids')
 @include('components.head')
 @include('partials.header')
@@ -85,11 +91,10 @@
                                 <li>✔ Email Support Only</li>
                                 <li>❌ No Mock Exams</li>
                             </ul>
-                            <a href="#"
-                                class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
-                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
-                                Book Now
-                            </a>
+<a href="#"
+    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
+    Book Now
+</a>
                         </div>
                     </li>
 
@@ -126,11 +131,10 @@
                                 <li>✔ Monthly Assessments</li>
                                 <li>✔ Chat & Email Support</li>
                             </ul>
-                            <a href="#"
-                                class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
-                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
-                                Book Now
-                            </a>
+<a href="#"
+    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
+    Book Now
+</a>
                         </div>
                     </li>
 
@@ -159,11 +163,10 @@
                                 <li>✔ Personalized Study Plan</li>
                                 <li>✔ 24/7 Tutor Support</li>
                             </ul>
-                            <a href="#"
-                                class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
-                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
-                                Book Now
-                            </a>
+<a href="#"
+    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
+    Book Now
+</a>
                         </div>
                     </li>
                 </ul>
@@ -1495,3 +1498,17 @@
         }
     </style>
 @endsection
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const paypalUrl = 'https://www.paypal.com/paypalme/olasunkanmiarowolo?country.x=GB&locale.x=en_GB';
+        const bookNowButtons = document.querySelectorAll('a');
+
+        bookNowButtons.forEach(button => {
+            if (button.textContent.trim() === 'Book Now') {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    window.open(paypalUrl, 'paypalPopup', 'width=600,height=700,scrollbars=yes');
+                });
+            }
+        });

@@ -161,6 +161,22 @@
 
 
 <style>
+
+    header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other elements */
+    background-color: #fff; /* Set a background color to avoid transparency issues */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+
+}
+
+/* For mobile-specific adjustments */
+@media (max-width: 768px) {
+    header {
+        top: 0; /* Ensures it sticks to the top on smaller screens */
+    }
+}
     .nav-item {
         position: relative;
     }
