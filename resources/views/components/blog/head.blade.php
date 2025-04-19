@@ -7,7 +7,6 @@
   <link rel="shortcut icon" href="{{ asset('assets\img\oa-tutors-logo-blue-v2.jpg') }}" type="image/x-icon">
   <script src="{{ asset('assets/js/blog.js') }}"></script>
 
-  <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/blog.css') }}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

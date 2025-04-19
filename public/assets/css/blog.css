@@ -1,10 +1,10 @@
 /* Copyright 2022 @codewithsadee  */
-/*-----------------------------------*\ 
+/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 .light-theme {
     /**
-     * light theme colors 
+     * light theme colors
      */
     --background-primary: hsl(0, 0%, 100%);
     --background-secondary: hsl(0, 0%, 97%);
@@ -17,7 +17,7 @@
   }
   .dark-theme {
     /**
-     * dark theme colors 
+     * dark theme colors
      */
     --background-primary: hsl(218, 23%, 23%);
     --background-secondary: hsl(220, 26%, 14%);
@@ -34,7 +34,7 @@
      */
     --white: hsl(0, 0%, 100%);
     /**
-     * typography 
+     * typography
      */
     --fs-base: 0.85rem;
     --fs-1: 1.875rem;
@@ -43,11 +43,11 @@
     --fs-4: 0.875rem;
     --fs-5: 0.75rem;
     /**
-     * spacing 
+     * spacing
      */
     --py: 5rem;
   }
-  /*-----------------------------------*\ 
+  /*-----------------------------------*\
     #RESET
   \*-----------------------------------*/
   *, *::before, *::after {
@@ -68,7 +68,7 @@
 
 
 .bookbutton {
-  font-size: 12px;
+  font-size: 10px;
   background-color: green;
   padding: 6px;
   position: absolute;
@@ -96,7 +96,7 @@
   .dark-theme::-webkit-scrollbar-thumb { border-color: hsl(219, 27%, 20%); }
   .light-theme::-webkit-scrollbar-track { background: hsl(0, 0%, 90%); }
   .dark-theme::-webkit-scrollbar-track { background: hsl(219, 27%, 20%); }
-  /*-----------------------------------*\ 
+  /*-----------------------------------*\
     #BASE STYLE
   \*-----------------------------------*/
   .h1,
@@ -124,7 +124,7 @@
   }
   .text-sm { font-size: var(--fs-4); }
   .text-tiny { font-size: var(--fs-5); }
-  /*-----------------------------------*\ 
+  /*-----------------------------------*\
     #REUSED STYLE
   \*-----------------------------------*/
   .container {
@@ -152,7 +152,7 @@
     border: 3px solid var(--foreground-tertiary);
   }
   .btn-secondary:hover { border-color: var(--accent); }
-  /*-----------------------------------*\ 
+  /*-----------------------------------*\
     #Extra style for dark theme
   \*-----------------------------------*/
   .dark-theme .btn-primary:hover { color: var(--background-primary); }
@@ -166,7 +166,7 @@
   }
   .dark-theme .load-more:hover { color: var(--white); }
   .dark-theme .aside .h2 { color: var(--foreground-primary); }
-  /*-----------------------------------*\ 
+  /*-----------------------------------*\
     #HEADER
   \*-----------------------------------*/
   header { background: var(--background-primary); }
@@ -242,7 +242,7 @@
     color: var(--foreground-secondary);
   }
   .mobile-nav .nav-link:hover { color: var(--accent); }
-  /*-----------------------------------*\ 
+  /*-----------------------------------*\
     #HERO SECTION
   \*-----------------------------------*/
   .hero {
@@ -275,7 +275,7 @@
     text-align: center;
   }
   .hero .right { display: none; }
-  /*-----------------------------------*\ 
+  /*-----------------------------------*\
     #BLOG SECTION
   \*-----------------------------------*/
   .main {
@@ -287,8 +287,8 @@
     margin-bottom: 3rem;
     text-align: center;
   }
-  
-  .blog-card-group { 
+
+  .blog-card-group {
     margin-bottom: 3rem;  }
   .blog-card {
     background: var(--background-primary);
@@ -358,11 +358,11 @@
     padding: 0.6875rem 1.1875rem;
   }
   .load-more:hover { background: var(--accent); }
-  /*-----------------------------------*\ 
+  /*-----------------------------------*\
     #ASIDE
   \*-----------------------------------*/
   .aside { display: none; }
-  /*-----------------------------------*\ 
+  /*-----------------------------------*\
     #FOOTER
   \*-----------------------------------*/
   footer { background: var(--background-primary); }
@@ -398,7 +398,7 @@
     font-weight: 500;
   }
   .copyright a:hover { text-decoration: underline; }
-  /*-----------------------------------*\ 
+  /*-----------------------------------*\
     #MEDIA QUERIES
   \*-----------------------------------*/
   /**
@@ -407,12 +407,12 @@
   @media (min-width: 260px) {
     :root {
       /**
-       * typography 
+       * typography
        */
       --fs-base: 0.90rem;
     }
     /**
-     * BLOG 
+     * BLOG
      */
     .blog-card {
       display: grid;
@@ -436,21 +436,21 @@
   @media (min-width: 550px) {
     :root {
       /**
-       * typography 
+       * typography
        */
       --fs-1: 2.25rem;
     }
     /**
-     * REUSED STYLE 
+     * REUSED STYLE
      */
     .container { padding: 0 30px; }
     /**
-     * HEADER 
+     * HEADER
      */
-    .navbar { padding: 30px 0; 
+    .navbar { padding: 30px 0;
     }
     /**
-     * BLOG 
+     * BLOG
      */
     .blog .h2 {
       position: relative;
@@ -499,7 +499,7 @@
       gap: 0;
     }
     /**
-     * FOOTER 
+     * FOOTER
      */
     footer .container {
       padding: var(--py) 30px;
@@ -513,7 +513,7 @@
    */
   @media (min-width: 768px) {
     /**
-     * REUSED STYLE 
+     * REUSED STYLE
      */
     .container { max-width: 800px; }
   }
@@ -523,17 +523,17 @@
   @media (min-width: 1024px) {
     :root {
       /**
-       * typography 
+       * typography
        */
       --fs-base: 1rem;
       --fs-1: 3rem;
     }
     /**
-     * REUSED STYLE 
+     * REUSED STYLE
      */
     .container { max-width: 1150px; }
     /**
-     * HEADER 
+     * HEADER
      */
     header .btn-group { display: none; }
     header .flex-wrapper {
@@ -583,7 +583,7 @@
     }
     .theme-btn-desktop.dark::before { left: calc(100% - 24px); }
     /**
-     * HERO 
+     * HERO
      */
     .hero { text-align: left; }
     .hero .container {
@@ -643,7 +643,7 @@
       z-index: 2;
     }
     /**
-     * MAIN 
+     * MAIN
      */
     .main .container {
       display: grid;
@@ -651,7 +651,7 @@
       gap: 60px;
     }
     /**
-     * ASIDE 
+     * ASIDE
      */
     .aside {
       display: block;
@@ -774,7 +774,7 @@
       margin: auto; /* fallback for margin-inline */
     }
     /**
-     * FOOTER 
+     * FOOTER
      */
     .footer-title { font-size: 1.125rem; }
     .footer-link { margin-bottom: 0.3rem; }

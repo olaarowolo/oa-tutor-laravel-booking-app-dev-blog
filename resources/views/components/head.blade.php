@@ -2,7 +2,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OA Tutors</title>
+    <title>OA Tutors | ...trusted partners </title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets\img\oa-tutors-logo-blue-CF.jpg" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets\img\oa-tutors-logo-blue-CF.jpg" />
@@ -41,12 +41,10 @@
     </script>
 
     <link rel="shortcut icon" href="{{ asset('assets/img/blog/oa-tutors-logo-white.png') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/blog.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
 
 
 
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"

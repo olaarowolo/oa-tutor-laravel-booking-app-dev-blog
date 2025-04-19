@@ -1,12 +1,12 @@
 <!-- KS1 PRICING START -->
-<section id="pricing-ks1" class="pricing-1 md:py-24 py-12  bg-gray-100 dark:bg-[#fffdfd]">
+<section id="pricing-ks1" class="pricing-1 md:py-24 py-12  bg-gray-100 background">
     <div class="container">
         <!-- TITLE START -->
-        <div class="text-center max-w-3xl mx-auto mb-10">
-            <h2 class="md:text-5xl text-3xl font-semibold text-light dark:text-dark">
+        <div class="text-center max-w-3xl mx-auto mb-15 blog-text" >
+            <h2 class="md:text-5xl text-3xl font-semibold blog-text ">
                 Key Stage 1 (KS1) Plans
             </h2>
-            <p class="mt-4 text-gray-600 dark:text-gray-300 md:text-lg">
+            <p class="mt-4 blog-text md:text-lg">
                 Build a strong foundation for your child's academic journey with personalized learning plans.
             </p>
         </div>

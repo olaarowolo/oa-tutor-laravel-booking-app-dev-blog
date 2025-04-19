@@ -1,5 +1,5 @@
 <section
-    class="px-4 py-10 mx-auto flex flex-col items-center justify-center min-h-[70vh] bg-[#f7f7f7] rounded-md shadow-md"
+    class="px-4 py-10 mx-auto flex flex-col items-center justify-center min-h-[70vh] background rounded-md shadow-md"
     id="register">
     <div
         class="w-full max-w-[900px] mx-auto border-2 border-[#0077cc] rounded-xl overflow-hidden font-['Segoe_UI'] flex flex-col md:flex-row bg-[#f9f9f9]">
@@ -44,3 +44,9 @@
     </div>
 
 </section>
+
+<style>
+.background {
+    background: var(--action-primary);
+}
+</style>

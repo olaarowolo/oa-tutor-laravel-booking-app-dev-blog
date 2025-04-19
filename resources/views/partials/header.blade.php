@@ -43,43 +43,42 @@
                     </li>
                     <!-- Learn Dropdown -->
                     <li class="nav-item dropdown">
-                        <a href="#" class="start">Start Learning</a>
-                        <div class="new">NEW<br>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item dropdown">
-                                    <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://classroom.google.com/" class="dropdown-item"
-                                                target="_blank">Google Classroom</a></li>
-                                        <li><a href="https://www.splashlearn.com/" class="dropdown-item"
-                                                target="_blank">Splash Learning</a></li>
-                                        <li><a href="https://www.khanacademy.org/" class="dropdown-item"
-                                                target="_blank">Khan Academy</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a href="/key-stage-2" class="dropdown-item">Key Stage 2 </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://classroom.google.com/c/NzA4OTc5MTEyNTIw"
-                                                class="dropdown-item" target="_blank">Google Classroom</a></li>
-                                        <li><a href="https://www.splashlearn.com/" class="dropdown-item"
-                                                target="_blank">Splash Learning</a></li>
-                                        <li><a href="https://www.khanacademy.org/" class="dropdown-item"
-                                                target="_blank">Khan Academy</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a href="/key-stage-3" class="dropdown-item">Key Stage 3</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://classroom.google.com/c/NzExNTg0ODA3MjU2"
-                                                class="dropdown-item" target="_blank">Google Classroom</a></li>
-                                        <li><a href="https://uk.splashlearn.com/signin#/student" class="dropdown-item"
-                                                target="_blank">Splash Learning</a></li>
-                                        <li><a href="https://www.khanacademy.org/teacher/class/ZFQJ2RC4/mastery/course-and-unit"
-                                                class="dropdown-item" target="_blank">Khan Academy</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <a href="#" class="start">Start Learning </a><span class="new">NEW</span>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown">
+                                <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://classroom.google.com/" class="dropdown-item"
+                                            target="_blank">Google Classroom</a></li>
+                                    <li><a href="https://www.splashlearn.com/" class="dropdown-item"
+                                            target="_blank">Splash Learning</a></li>
+                                    <li><a href="https://www.khanacademy.org/" class="dropdown-item"
+                                            target="_blank">Khan Academy</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/key-stage-2" class="dropdown-item">Key Stage 2 </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://classroom.google.com/c/NzA4OTc5MTEyNTIw"
+                                            class="dropdown-item" target="_blank">Google Classroom</a></li>
+                                    <li><a href="https://www.splashlearn.com/" class="dropdown-item"
+                                            target="_blank">Splash Learning</a></li>
+                                    <li><a href="https://www.khanacademy.org/" class="dropdown-item"
+                                            target="_blank">Khan Academy</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/key-stage-3" class="dropdown-item">Key Stage 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://classroom.google.com/c/NzExNTg0ODA3MjU2"
+                                            class="dropdown-item" target="_blank">Google Classroom</a></li>
+                                    <li><a href="https://uk.splashlearn.com/signin#/student" class="dropdown-item"
+                                            target="_blank">Splash Learning</a></li>
+                                    <li><a href="https://www.khanacademy.org/teacher/class/ZFQJ2RC4/mastery/course-and-unit"
+                                            class="dropdown-item" target="_blank">Khan Academy</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
 
@@ -162,21 +161,6 @@
 
 <style>
 
-    header {
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensures the header stays above other elements */
-    background-color: #fff; /* Set a background color to avoid transparency issues */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
-
-}
-
-/* For mobile-specific adjustments */
-@media (max-width: 768px) {
-    header {
-        top: 0; /* Ensures it sticks to the top on smaller screens */
-    }
-}
     .nav-item {
         position: relative;
     }

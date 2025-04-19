@@ -4,7 +4,7 @@
 @section('title', 'Key Stage 3 (KS3)')
 @include('components.slider')
 @section('content')
-@include('components.backtoschool-slider')
+{{-- @include('components.backtoschool-slider') --}}
 @include('partials.prices.ks3-pricing')
 <section class="px-5 py-5 mx-auto flex flex-wrap items-center justify-center" id="ks3">
         <main class="max-w-5xl w-full">
