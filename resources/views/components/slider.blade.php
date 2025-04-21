@@ -4,10 +4,10 @@
             <h1 class="h1">
                 Hi there!, <br>
                 You're welcome to  <br> <b>OA Tutors</b>
-                <br> <span class="h2"> We're here to help you unlock your child's potential.</span>
+                <br> <span class="h2"> Let's make this summer term a success!</span>
             </h1>
             <p class="h3">
-                with personalised  <abbr title="Accessibility">one-to-one and group lessons</abbr>
+                We're here to help you unlock your child's potential with personalised  <abbr title="Accessibility">one-to-one and group lessons</abbr>
                 We are offering you a one-stop path to success
 
             </p>
