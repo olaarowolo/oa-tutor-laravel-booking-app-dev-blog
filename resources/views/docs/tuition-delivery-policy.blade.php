@@ -9,8 +9,7 @@
             <section class="mb-8">
 
                 <h2 class="text-2xl font-bold mb-4">OA Tutors Tuition Booking Policy <a class="fa fa-download"
-                    aria-hidden="true" href="/assets/docs/oa-tutor-tuition-delivery-policy.pdf"
-                    target="_blank"> </a> </h2>
+                        aria-hidden="true" href="/assets/docs/oa-tutor-tuition-delivery-policy.pdf" target="_blank"> </a> </h2>
 
 
                 <p><strong>Objective:</strong><br>

@@ -26,7 +26,8 @@
             subjects</strong> are English, Mathematics, and Science, which receive the greatest focus. Other
         <strong>foundation subjects</strong> include History, Geography, Art, Music, Design and Technology, Physical
         Education, Computing, and Modern Foreign Languages (in Key Stage 2 and above). Each subject has clear objectives
-        that guide the content covered and the skills developed at each stage.</p>
+        that guide the content covered and the skills developed at each stage.
+    </p>
     <h2>Assessments and Progress Monitoring</h2>
     <p>Formal assessments are a key component of the National Curriculum, providing insights into your child’s progress and
         identifying areas that may need additional support. Key assessments include:</p>

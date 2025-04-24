@@ -3,7 +3,8 @@
 @include('partials.header')
 @section('title', 'Back to School Registration (Summer Term 2025)')
 {{-- @include('components.slider') --}}
-@include('components.backtoschool')
 @section('content')
+@include('components.backtoschool')
+    @include('components.backtoschool-form')
 
 @endsection

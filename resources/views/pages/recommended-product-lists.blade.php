@@ -261,7 +261,7 @@
                             </li>
                             <li class="product">
                                 <img src="https://m.media-amazon.com/images/I/41-9yEwLyMS._AC_SX679_.jpg" alt=""
-                                    class="product-image" width="80%"/>
+                                    class="product-image" width="80%" />
                                 <button class="blog-topic text-tiny">Highly Recommended</button>
                                 <h3 class="product-title blog-text">
                                     Esselte, Number 1 Power, A4, Lever Arch File, 75 mm Spine, 500 sheets Capacity, PP,

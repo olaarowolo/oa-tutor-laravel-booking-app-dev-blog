@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <body class="light-theme">
     <main>
         @yield('content')

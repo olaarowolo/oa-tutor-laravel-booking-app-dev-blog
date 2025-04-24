@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('meta')
-<meta property="og:image" content="{{ asset('assets/img/fliers/Back_to_School-Summer2025.png') }}" />
-<meta property="og:description" content="Welcome to our Back to School Tuition Program at tutor.olaarowolo.com. Whether your child is preparing for Key Stage 2, Key Stage 3, the 11+ Exams, or their GCSEs, this program is designed to boost their confidence and academic performance as the new school term begins." />
+    <meta property="og:image" content="{{ asset('assets/img/fliers/Back_to_School-Summer2025.png') }}" />
+    <meta property="og:description"
+        content="Welcome to our Back to School Tuition Program at tutor.olaarowolo.com. Whether your child is preparing for Key Stage 2, Key Stage 3, the 11+ Exams, or their GCSEs, this program is designed to boost their confidence and academic performance as the new school term begins." />
 @endsection
 
 @section('title', 'Coding for Kids')
@@ -42,258 +43,258 @@
                 <p><strong>Suitable for:</strong> Students in KS2, KS3, those preparing for 11+ Exams, and GCSE candidates
                 </p>
             </section>
-        <!-- =============================== KS2 PRICING START =============================== -->
-        <section id="pricing-ks2" class="pricing-1 md:py-24 py-12 bg-gray-100 dark:bg-[#eedde2]">
-            <div class="container">
-                <div class="text-center max-w-3xl mx-auto mb-10">
-                    <h2 class="md:text-5xl text-3xl font-semibold text-light dark:text-dark">
-                        Key Stage 2 (KS2) Plans
-                    </h2>
-                    <p class="mt-4 text-gray-600 dark:text-gray-300 md:text-lg">
-                        Advanced learning plans designed to excel in 11+ exams.
-                    </p>
+            <!-- =============================== KS2 PRICING START =============================== -->
+            <section id="pricing-ks2" class="pricing-1 md:py-24 py-12 bg-gray-100 dark:bg-[#eedde2]">
+                <div class="container">
+                    <div class="text-center max-w-3xl mx-auto mb-10">
+                        <h2 class="md:text-5xl text-3xl font-semibold text-light dark:text-dark">
+                            Key Stage 2 (KS2) Plans
+                        </h2>
+                        <p class="mt-4 text-gray-600 dark:text-gray-300 md:text-lg">
+                            Advanced learning plans designed to excel in 11+ exams.
+                        </p>
 
-                    <!-- LIMITED TIME OFFER Banner -->
-                    <div
-                        class="mt-6 mb-4 inline-block bg-red-600 text-white font-bold py-2 px-6 rounded-full text-lg shadow-md">
-                        🎉 LIMITED TIME OFFER – 40% OFF!
+                        <!-- LIMITED TIME OFFER Banner -->
+                        <div
+                            class="mt-6 mb-4 inline-block bg-red-600 text-white font-bold py-2 px-6 rounded-full text-lg shadow-md">
+                            🎉 LIMITED TIME OFFER – 40% OFF!
+                        </div>
+
+                        <!-- Countdown Timer -->
+                        <div class="text-xl font-semibold text-red-600 mt-2" id="ks2-timer">
+                            Offer ends in: <span id="ks2-countdown">00d 00h 00m 00s</span>
+                        </div>
                     </div>
 
-                    <!-- Countdown Timer -->
-                    <div class="text-xl font-semibold text-red-600 mt-2" id="ks2-timer">
-                        Offer ends in: <span id="ks2-countdown">00d 00h 00m 00s</span>
+                    <ul class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+                        <!-- KS2 Basic Plan -->
+                        <li class="contents">
+                            <div
+                                class="flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-md dark:border-gray-600 xl:p-8 dark:bg-[#171717] dark:text-white relative">
+                                <!-- Ribbon -->
+                                <div
+                                    class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
+                                    LIMITED TIME OFFER
+                                </div>
+                                <h3 class="mb-4 text-2xl font-semibold">KS2 Basic Plan</h3>
+                                <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
+                                    Foundation learning for 11+ preparation.
+                                </p>
+                                <div class="my-8 flex items-center gap-4">
+                                    <span class="line-through text-xl text-gray-500 dark:text-gray-400">£110</span>
+                                    <span class="text-5xl font-extrabold text-light dark:text-dark">£66</span>
+                                    <span class="text-sm">/month</span>
+                                </div>
+                                <ul class="mb-8 space-y-4 text-left">
+                                    <li>✔ 2 Sessions per Week</li>
+                                    <li>✔ Group Classes (Max 6 Students)</li>
+                                    <li>✔ Practice Worksheets</li>
+                                    <li>✔ Email Support Only</li>
+                                    <li>❌ No Mock Exams</li>
+                                </ul>
+                                <a href="#"
+                                    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
+                                    Book Now
+                                </a>
+                            </div>
+                        </li>
+
+                        <!-- KS2 Standard Plan -->
+                        <li class="contents">
+                            <div
+                                class="flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border-2 border-light dark:border-dark shadow-md xl:p-8 dark:bg-[#171717] dark:text-white relative">
+                                <!-- RECOMMENDED -->
+                                <div
+                                    class="ribbon absolute -top-2 -right-2 h-40 w-40 overflow-hidden before:absolute before:top-0 before:left-0 before:border-4 before:border-light dark:before:border-dark after:absolute after:right-0 after:bottom-0 after:border-4 after:border-light dark:after:border-dark rounded-md">
+                                    <div
+                                        class="absolute -right-14 top-[43px] w-60 rotate-45 bg-light dark:bg-dark py-2.5 text-center text-white shadow-md">
+                                        Recommended
+                                    </div>
+                                </div>
+                                <!-- Ribbon -->
+                                <div
+                                    class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
+                                    LIMITED TIME OFFER
+                                </div>
+                                <h3 class="mb-4 text-2xl font-semibold">KS2 Standard Plan</h3>
+                                <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
+                                    Enhanced 11+ practice with feedback.
+                                </p>
+                                <div class="my-8 flex items-center gap-4">
+                                    <span class="line-through text-xl text-gray-500 dark:text-gray-400">£150</span>
+                                    <span class="text-5xl font-extrabold text-light dark:text-dark">£90</span>
+                                    <span class="text-sm">/month</span>
+                                </div>
+                                <ul class="mb-8 space-y-4 text-left">
+                                    <li>✔ 3 Sessions per Week</li>
+                                    <li>✔ Small Group Classes (Max 4 Students)</li>
+                                    <li>✔ Homework Review & Feedback</li>
+                                    <li>✔ Monthly Assessments</li>
+                                    <li>✔ Chat & Email Support</li>
+                                </ul>
+                                <a href="#"
+                                    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
+                                    Book Now
+                                </a>
+                            </div>
+                        </li>
+
+                        <!-- KS2 Premium Plan -->
+                        <li class="contents">
+                            <div
+                                class="flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-md dark:border-gray-600 xl:p-8 dark:bg-[#171717] dark:text-white relative">
+                                <!-- Ribbon -->
+                                <div
+                                    class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
+                                    LIMITED TIME OFFER
+                                </div>
+                                <h3 class="mb-4 text-2xl font-semibold">KS2 Premium Plan</h3>
+                                <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
+                                    Comprehensive 11+ prep with personalized support.
+                                </p>
+                                <div class="my-8 flex items-center gap-4">
+                                    <span class="line-through text-xl text-gray-500 dark:text-gray-400">£200</span>
+                                    <span class="text-5xl font-extrabold text-light dark:text-dark">£120</span>
+                                    <span class="text-sm">/month</span>
+                                </div>
+                                <ul class="mb-8 space-y-4 text-left">
+                                    <li>✔ 4 Sessions per Week</li>
+                                    <li>✔ One-on-One Tutoring</li>
+                                    <li>✔ Mock Exams & Analysis</li>
+                                    <li>✔ Personalized Study Plan</li>
+                                    <li>✔ 24/7 Tutor Support</li>
+                                </ul>
+                                <a href="#"
+                                    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
+                                    Book Now
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- =============================== KS2 PRICING END =============================== -->
+            <!-- =============================== KS3 PRICING START =============================== -->
+            <section id="pricing-ks3" class="pricing-1 md:py-24 py-12 relative bg-gray-100 light:bg-[#eedde2]">
+                <div class="container pt-20">
+                    <div class="text-center max-w-3xl mx-auto mb-10">
+                        <h2 class="md:text-5xl text-3xl font-semibold text-light dark:text-dark">
+                            Key Stage 3 (KS3) Plans
+                        </h2>
+                        <p class="mt-4 text-gray-600 dark:text-gray-300 md:text-lg">
+                            Prepare for GCSEs with our targeted learning plans.
+                        </p>
                     </div>
-                </div>
 
-                <ul class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-                    <!-- KS2 Basic Plan -->
-                    <li class="contents">
-                        <div
-                            class="flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-md dark:border-gray-600 xl:p-8 dark:bg-[#171717] dark:text-white relative">
-                            <!-- Ribbon -->
+                    <ul class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+                        <!-- Reusable card for each plan -->
+                        <!-- KS3 BASIC PLAN -->
+                        <li class="contents">
                             <div
-                                class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
-                                LIMITED TIME OFFER
-                            </div>
-                            <h3 class="mb-4 text-2xl font-semibold">KS2 Basic Plan</h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
-                                Foundation learning for 11+ preparation.
-                            </p>
-                            <div class="my-8 flex items-center gap-4">
-                                <span class="line-through text-xl text-gray-500 dark:text-gray-400">£110</span>
-                                <span class="text-5xl font-extrabold text-light dark:text-dark">£66</span>
-                                <span class="text-sm">/month</span>
-                            </div>
-                            <ul class="mb-8 space-y-4 text-left">
-                                <li>✔ 2 Sessions per Week</li>
-                                <li>✔ Group Classes (Max 6 Students)</li>
-                                <li>✔ Practice Worksheets</li>
-                                <li>✔ Email Support Only</li>
-                                <li>❌ No Mock Exams</li>
-                            </ul>
-<a href="#"
-    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-    Book Now
-</a>
-                        </div>
-                    </li>
-
-                    <!-- KS2 Standard Plan -->
-                    <li class="contents">
-                        <div
-                            class="flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border-2 border-light dark:border-dark shadow-md xl:p-8 dark:bg-[#171717] dark:text-white relative">
-                            <!-- RECOMMENDED -->
-                            <div
-                                class="ribbon absolute -top-2 -right-2 h-40 w-40 overflow-hidden before:absolute before:top-0 before:left-0 before:border-4 before:border-light dark:before:border-dark after:absolute after:right-0 after:bottom-0 after:border-4 after:border-light dark:after:border-dark rounded-md">
+                                class="relative flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-md dark:border-gray-600 xl:p-8 dark:bg-[#171717] dark:text-white">
+                                <!-- Ribbon -->
                                 <div
-                                    class="absolute -right-14 top-[43px] w-60 rotate-45 bg-light dark:bg-dark py-2.5 text-center text-white shadow-md">
-                                    Recommended
+                                    class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
+                                    LIMITED TIME OFFER
                                 </div>
+                                <h3 class="mb-4 text-2xl font-semibold">KS3 Basic Plan</h3>
+                                <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
+                                    Foundation level support for GCSE preparation.
+                                </p>
+                                <div class="my-8 flex items-center space-x-3">
+                                    <span class="line-through text-2xl text-gray-400">£120</span>
+                                    <span class="text-4xl font-extrabold text-light dark:text-dark">£72</span>
+                                    <span>/month</span>
+                                </div>
+                                <ul class="mb-8 space-y-4 text-left">
+                                    <li>✔ 2 Sessions per Week</li>
+                                    <li>✔ Group Classes (Max 8 Students)</li>
+                                    <li>✔ Core Subject Support</li>
+                                    <li>✔ Email Support Only</li>
+                                    <li>❌ No Exam Practice</li>
+                                </ul>
+                                <a href="#"
+                                    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
+                                    Book Now
+                                </a>
                             </div>
-                            <!-- Ribbon -->
-                            <div
-                                class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
-                                LIMITED TIME OFFER
-                            </div>
-                            <h3 class="mb-4 text-2xl font-semibold">KS2 Standard Plan</h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
-                                Enhanced 11+ practice with feedback.
-                            </p>
-                            <div class="my-8 flex items-center gap-4">
-                                <span class="line-through text-xl text-gray-500 dark:text-gray-400">£150</span>
-                                <span class="text-5xl font-extrabold text-light dark:text-dark">£90</span>
-                                <span class="text-sm">/month</span>
-                            </div>
-                            <ul class="mb-8 space-y-4 text-left">
-                                <li>✔ 3 Sessions per Week</li>
-                                <li>✔ Small Group Classes (Max 4 Students)</li>
-                                <li>✔ Homework Review & Feedback</li>
-                                <li>✔ Monthly Assessments</li>
-                                <li>✔ Chat & Email Support</li>
-                            </ul>
-<a href="#"
-    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-    Book Now
-</a>
-                        </div>
-                    </li>
+                        </li>
 
-                    <!-- KS2 Premium Plan -->
-                    <li class="contents">
-                        <div
-                            class="flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-md dark:border-gray-600 xl:p-8 dark:bg-[#171717] dark:text-white relative">
-                            <!-- Ribbon -->
+                        <!-- KS3 STANDARD PLAN -->
+                        <li class="contents">
                             <div
-                                class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
-                                LIMITED TIME OFFER
-                            </div>
-                            <h3 class="mb-4 text-2xl font-semibold">KS2 Premium Plan</h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
-                                Comprehensive 11+ prep with personalized support.
-                            </p>
-                            <div class="my-8 flex items-center gap-4">
-                                <span class="line-through text-xl text-gray-500 dark:text-gray-400">£200</span>
-                                <span class="text-5xl font-extrabold text-light dark:text-dark">£120</span>
-                                <span class="text-sm">/month</span>
-                            </div>
-                            <ul class="mb-8 space-y-4 text-left">
-                                <li>✔ 4 Sessions per Week</li>
-                                <li>✔ One-on-One Tutoring</li>
-                                <li>✔ Mock Exams & Analysis</li>
-                                <li>✔ Personalized Study Plan</li>
-                                <li>✔ 24/7 Tutor Support</li>
-                            </ul>
-<a href="#"
-    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-    Book Now
-</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- =============================== KS2 PRICING END =============================== -->
-        <!-- =============================== KS3 PRICING START =============================== -->
-        <section id="pricing-ks3" class="pricing-1 md:py-24 py-12 relative bg-gray-100 light:bg-[#eedde2]">
-            <div class="container pt-20">
-                <div class="text-center max-w-3xl mx-auto mb-10">
-                    <h2 class="md:text-5xl text-3xl font-semibold text-light dark:text-dark">
-                        Key Stage 3 (KS3) Plans
-                    </h2>
-                    <p class="mt-4 text-gray-600 dark:text-gray-300 md:text-lg">
-                        Prepare for GCSEs with our targeted learning plans.
-                    </p>
-                </div>
-
-                <ul class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-                    <!-- Reusable card for each plan -->
-                    <!-- KS3 BASIC PLAN -->
-                    <li class="contents">
-                        <div
-                            class="relative flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-md dark:border-gray-600 xl:p-8 dark:bg-[#171717] dark:text-white">
-                            <!-- Ribbon -->
-                            <div
-                                class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
-                                LIMITED TIME OFFER
-                            </div>
-                            <h3 class="mb-4 text-2xl font-semibold">KS3 Basic Plan</h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
-                                Foundation level support for GCSE preparation.
-                            </p>
-                            <div class="my-8 flex items-center space-x-3">
-                                <span class="line-through text-2xl text-gray-400">£120</span>
-                                <span class="text-4xl font-extrabold text-light dark:text-dark">£72</span>
-                                <span>/month</span>
-                            </div>
-                            <ul class="mb-8 space-y-4 text-left">
-                                <li>✔ 2 Sessions per Week</li>
-                                <li>✔ Group Classes (Max 8 Students)</li>
-                                <li>✔ Core Subject Support</li>
-                                <li>✔ Email Support Only</li>
-                                <li>❌ No Exam Practice</li>
-                            </ul>
-                            <a href="#"
-                                class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
-                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
-                                Book Now
-                            </a>
-                        </div>
-                    </li>
-
-                    <!-- KS3 STANDARD PLAN -->
-                    <li class="contents">
-                        <div
-                            class="relative flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border-2 border-light dark:border-dark shadow-md xl:p-8 dark:bg-[#171717] dark:text-white">
-                            <div
-                                class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
-                                LIMITED TIME OFFER
-                            </div>
-                            <!-- RECOMMENDED Ribbon -->
-                            <div
-                                class="ribbon absolute -top-2 -right-2 h-40 w-40 overflow-hidden before:absolute before:top-0 before:left-0 before:border-4 before:border-light dark:before:border-dark after:absolute after:right-0 after:bottom-0 after:border-4 after:border-light dark:after:border-dark rounded-md">
+                                class="relative flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border-2 border-light dark:border-dark shadow-md xl:p-8 dark:bg-[#171717] dark:text-white">
                                 <div
-                                    class="absolute -right-14 top-[43px] w-60 rotate-45 bg-light dark:bg-dark py-2.5 text-center text-white shadow-md">
-                                    Recommended
+                                    class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
+                                    LIMITED TIME OFFER
                                 </div>
+                                <!-- RECOMMENDED Ribbon -->
+                                <div
+                                    class="ribbon absolute -top-2 -right-2 h-40 w-40 overflow-hidden before:absolute before:top-0 before:left-0 before:border-4 before:border-light dark:before:border-dark after:absolute after:right-0 after:bottom-0 after:border-4 after:border-light dark:after:border-dark rounded-md">
+                                    <div
+                                        class="absolute -right-14 top-[43px] w-60 rotate-45 bg-light dark:bg-dark py-2.5 text-center text-white shadow-md">
+                                        Recommended
+                                    </div>
+                                </div>
+                                <h3 class="mb-4 text-2xl font-semibold">KS3 Standard Plan</h3>
+                                <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
+                                    Intermediate level for GCSE support with feedback.
+                                </p>
+                                <div class="my-8 flex items-center space-x-3">
+                                    <span class="line-through text-2xl text-gray-400">£160</span>
+                                    <span class="text-4xl font-extrabold text-light dark:text-dark">£96</span>
+                                    <span>/month</span>
+                                </div>
+                                <ul class="mb-8 space-y-4 text-left">
+                                    <li>✔ 3 Sessions per Week</li>
+                                    <li>✔ Small Group Sessions (Max 4 Students)</li>
+                                    <li>✔ Exam-style Questions & Feedback</li>
+                                    <li>✔ Chat & Email Support</li>
+                                    <li>✔ Monthly Performance Reviews</li>
+                                </ul>
+                                <a href="#"
+                                    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
+                                    Book Now
+                                </a>
                             </div>
-                            <h3 class="mb-4 text-2xl font-semibold">KS3 Standard Plan</h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
-                                Intermediate level for GCSE support with feedback.
-                            </p>
-                            <div class="my-8 flex items-center space-x-3">
-                                <span class="line-through text-2xl text-gray-400">£160</span>
-                                <span class="text-4xl font-extrabold text-light dark:text-dark">£96</span>
-                                <span>/month</span>
-                            </div>
-                            <ul class="mb-8 space-y-4 text-left">
-                                <li>✔ 3 Sessions per Week</li>
-                                <li>✔ Small Group Sessions (Max 4 Students)</li>
-                                <li>✔ Exam-style Questions & Feedback</li>
-                                <li>✔ Chat & Email Support</li>
-                                <li>✔ Monthly Performance Reviews</li>
-                            </ul>
-                            <a href="#"
-                                class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
-                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
-                                Book Now
-                            </a>
-                        </div>
-                    </li>
+                        </li>
 
-                    <!-- KS3 PREMIUM PLAN -->
-                    <li class="contents">
-                        <div
-                            class="relative flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-md dark:border-gray-600 xl:p-8 dark:bg-[#171717] dark:text-white">
+                        <!-- KS3 PREMIUM PLAN -->
+                        <li class="contents">
                             <div
-                                class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
-                                LIMITED TIME OFFER
+                                class="relative flex flex-col p-6 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-md dark:border-gray-600 xl:p-8 dark:bg-[#171717] dark:text-white">
+                                <div
+                                    class="absolute top-0 left-0 bg-red-500 text-white text-xs px-3 py-1 rounded-br-lg font-semibold">
+                                    LIMITED TIME OFFER
+                                </div>
+                                <h3 class="mb-4 text-2xl font-semibold">KS3 Premium Plan</h3>
+                                <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
+                                    Comprehensive one-on-one GCSE preparation.
+                                </p>
+                                <div class="my-8 flex items-center space-x-3">
+                                    <span class="line-through text-2xl text-gray-400">£400</span>
+                                    <span class="text-4xl font-extrabold text-light dark:text-dark">£240</span>
+                                    <span>/month</span>
+                                </div>
+                                <ul class="mb-8 space-y-4 text-left">
+                                    <li>✔ 4 Sessions per Week</li>
+                                    <li>✔ One-on-One Subject-Specific Tutoring</li>
+                                    <li>✔ Full GCSE Prep with Past Papers</li>
+                                    <li>✔ Personalised Study Tracker</li>
+                                    <li>✔ 24/7 Tutor Support</li>
+                                </ul>
+                                <a href="#"
+                                    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
+                                    Book Now
+                                </a>
                             </div>
-                            <h3 class="mb-4 text-2xl font-semibold">KS3 Premium Plan</h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400 max-w-[90%]">
-                                Comprehensive one-on-one GCSE preparation.
-                            </p>
-                            <div class="my-8 flex items-center space-x-3">
-                                <span class="line-through text-2xl text-gray-400">£400</span>
-                                <span class="text-4xl font-extrabold text-light dark:text-dark">£240</span>
-                                <span>/month</span>
-                            </div>
-                            <ul class="mb-8 space-y-4 text-left">
-                                <li>✔ 4 Sessions per Week</li>
-                                <li>✔ One-on-One Subject-Specific Tutoring</li>
-                                <li>✔ Full GCSE Prep with Past Papers</li>
-                                <li>✔ Personalised Study Tracker</li>
-                                <li>✔ 24/7 Tutor Support</li>
-                            </ul>
-                            <a href="#"
-                                class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500 calendly-popup"
-                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-link'});return false;">
-                                Book Now
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                        </li>
+                    </ul>
+                </div>
+            </section>
             <section class="mb-8">
                 <h2 class="text-2xl font-bold mb-4">Special Back to School Offer</h2>
                 <p><strong>Group Sessions:</strong> Originally <s>£110/month</s> — <strong>Now 40% OFF: Just
@@ -450,13 +451,13 @@
         }
 
         /*
-        1. Use a consistent sensible line-height in all browsers.
-        2. Prevent adjustments of font size after orientation changes in iOS.
-        3. Use a more readable tab size.
-        4. Use the user's configured `sans` font-family by default.
-        5. Use the user's configured `sans` font-feature-settings by default.
-        6. Use the user's configured `sans` font-variation-settings by default.
-        */
+                            1. Use a consistent sensible line-height in all browsers.
+                            2. Prevent adjustments of font size after orientation changes in iOS.
+                            3. Use a more readable tab size.
+                            4. Use the user's configured `sans` font-family by default.
+                            5. Use the user's configured `sans` font-feature-settings by default.
+                            6. Use the user's configured `sans` font-variation-settings by default.
+                            */
 
         html {
             line-height: 1.5;
@@ -479,9 +480,9 @@
         }
 
         /*
-        1. Remove the margin in all browsers.
-        2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-        */
+                            1. Remove the margin in all browsers.
+                            2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+                            */
 
         body {
             margin: 0;
@@ -491,10 +492,10 @@
         }
 
         /*
-        1. Add the correct height in Firefox.
-        2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-        3. Ensure horizontal rules are visible by default.
-        */
+                            1. Add the correct height in Firefox.
+                            2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+                            3. Ensure horizontal rules are visible by default.
+                            */
 
         hr {
             height: 0;
@@ -506,8 +507,8 @@
         }
 
         /*
-        Add the correct text decoration in Chrome, Edge, and Safari.
-        */
+                            Add the correct text decoration in Chrome, Edge, and Safari.
+                            */
 
         abbr:where([title]) {
             -webkit-text-decoration: underline dotted;
@@ -515,8 +516,8 @@
         }
 
         /*
-        Remove the default font size and weight for headings.
-        */
+                            Remove the default font size and weight for headings.
+                            */
 
         h1,
         h2,
@@ -529,8 +530,8 @@
         }
 
         /*
-        Reset links to optimize for opt-in styling instead of opt-out.
-        */
+                            Reset links to optimize for opt-in styling instead of opt-out.
+                            */
 
         a {
             color: inherit;
@@ -538,8 +539,8 @@
         }
 
         /*
-        Add the correct font weight in Edge and Safari.
-        */
+                            Add the correct font weight in Edge and Safari.
+                            */
 
         b,
         strong {
@@ -547,9 +548,9 @@
         }
 
         /*
-        1. Use the user's configured `mono` font family by default.
-        2. Correct the odd `em` font sizing in all browsers.
-        */
+                            1. Use the user's configured `mono` font family by default.
+                            2. Correct the odd `em` font sizing in all browsers.
+                            */
 
         code,
         kbd,
@@ -563,16 +564,16 @@
         }
 
         /*
-        Add the correct font size in all browsers.
-        */
+                            Add the correct font size in all browsers.
+                            */
 
         small {
             font-size: 80%;
         }
 
         /*
-        Prevent `sub` and `sup` elements from affecting the line height in all browsers.
-        */
+                            Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+                            */
 
         sub,
         sup {
@@ -591,10 +592,10 @@
         }
 
         /*
-        1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-        2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-        3. Remove gaps between table borders by default.
-        */
+                            1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+                            2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+                            3. Remove gaps between table borders by default.
+                            */
 
         table {
             text-indent: 0;
@@ -606,10 +607,10 @@
         }
 
         /*
-        1. Change the font styles in all browsers.
-        2. Remove the margin in Firefox and Safari.
-        3. Remove default padding in all browsers.
-        */
+                            1. Change the font styles in all browsers.
+                            2. Remove the margin in Firefox and Safari.
+                            3. Remove default padding in all browsers.
+                            */
 
         button,
         input,
@@ -637,8 +638,8 @@
         }
 
         /*
-        Remove the inheritance of text transform in Edge and Firefox.
-        */
+                            Remove the inheritance of text transform in Edge and Firefox.
+                            */
 
         button,
         select {
@@ -646,9 +647,9 @@
         }
 
         /*
-        1. Correct the inability to style clickable types in iOS and Safari.
-        2. Remove default button styles.
-        */
+                            1. Correct the inability to style clickable types in iOS and Safari.
+                            2. Remove default button styles.
+                            */
 
         button,
         [type="button"],
@@ -663,32 +664,32 @@
         }
 
         /*
-        Use the modern Firefox focus style for all focusable elements.
-        */
+                            Use the modern Firefox focus style for all focusable elements.
+                            */
 
         :-moz-focusring {
             outline: auto;
         }
 
         /*
-        Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
-        */
+                            Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+                            */
 
         :-moz-ui-invalid {
             box-shadow: none;
         }
 
         /*
-        Add the correct vertical alignment in Chrome and Firefox.
-        */
+                            Add the correct vertical alignment in Chrome and Firefox.
+                            */
 
         progress {
             vertical-align: baseline;
         }
 
         /*
-        Correct the cursor style of increment and decrement buttons in Safari.
-        */
+                            Correct the cursor style of increment and decrement buttons in Safari.
+                            */
 
         ::-webkit-inner-spin-button,
         ::-webkit-outer-spin-button {
@@ -696,9 +697,9 @@
         }
 
         /*
-        1. Correct the odd appearance in Chrome and Safari.
-        2. Correct the outline style in Safari.
-        */
+                            1. Correct the odd appearance in Chrome and Safari.
+                            2. Correct the outline style in Safari.
+                            */
 
         [type="search"] {
             -webkit-appearance: textfield;
@@ -708,17 +709,17 @@
         }
 
         /*
-        Remove the inner padding in Chrome and Safari on macOS.
-        */
+                            Remove the inner padding in Chrome and Safari on macOS.
+                            */
 
         ::-webkit-search-decoration {
             -webkit-appearance: none;
         }
 
         /*
-        1. Correct the inability to style clickable types in iOS and Safari.
-        2. Change font properties to `inherit` in Safari.
-        */
+                            1. Correct the inability to style clickable types in iOS and Safari.
+                            2. Change font properties to `inherit` in Safari.
+                            */
 
         ::-webkit-file-upload-button {
             -webkit-appearance: button;
@@ -728,16 +729,16 @@
         }
 
         /*
-        Add the correct display in Chrome and Safari.
-        */
+                            Add the correct display in Chrome and Safari.
+                            */
 
         summary {
             display: list-item;
         }
 
         /*
-        Removes the default spacing and border for appropriate elements.
-        */
+                            Removes the default spacing and border for appropriate elements.
+                            */
 
         blockquote,
         dl,
@@ -773,25 +774,25 @@
         }
 
         /*
-        Reset default styling for dialogs.
-        */
+                            Reset default styling for dialogs.
+                            */
 
         dialog {
             padding: 0;
         }
 
         /*
-        Prevent resizing textareas horizontally by default.
-        */
+                            Prevent resizing textareas horizontally by default.
+                            */
 
         textarea {
             resize: vertical;
         }
 
         /*
-        1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
-        2. Set the default placeholder color to the user's configured gray 400 color.
-        */
+                            1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+                            2. Set the default placeholder color to the user's configured gray 400 color.
+                            */
 
         input::-moz-placeholder,
         textarea::-moz-placeholder {
@@ -810,8 +811,8 @@
         }
 
         /*
-        Set the default cursor for buttons.
-        */
+                            Set the default cursor for buttons.
+                            */
 
         button,
         [role="button"] {
@@ -819,18 +820,18 @@
         }
 
         /*
-        Make sure disabled buttons don't get the pointer cursor.
-        */
+                            Make sure disabled buttons don't get the pointer cursor.
+                            */
 
         :disabled {
             cursor: default;
         }
 
         /*
-        1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-        2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-           This can trigger a poorly considered lint error in some tools but is included by design.
-        */
+                            1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+                            2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+                               This can trigger a poorly considered lint error in some tools but is included by design.
+                            */
 
         img,
         svg,
@@ -847,8 +848,8 @@
         }
 
         /*
-        Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
-        */
+                            Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+                            */
 
         img,
         video {
@@ -1500,15 +1501,17 @@
 @endsection
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const paypalUrl = 'https://www.paypal.com/paypalme/olasunkanmiarowolo?country.x=GB&locale.x=en_GB';
-        const bookNowButtons = document.querySelectorAll('a');
+    document.addEventListener('DOMContentLoaded', function() {
+                const paypalUrl = 'https://www.paypal.com/paypalme/olasunkanmiarowolo?country.x=GB&locale.x=en_GB';
+                const bookNowButtons = document.querySelectorAll('a');
 
-        bookNowButtons.forEach(button => {
-            if (button.textContent.trim() === 'Book Now') {
-                button.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    window.open(paypalUrl, 'paypalPopup', 'width=600,height=700,scrollbars=yes');
+                bookNowButtons.forEach(button => {
+                    if (button.textContent.trim() === 'Book Now') {
+                        button.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            window.open(paypalUrl, 'paypalPopup',
+                                'width=600,height=700,scrollbars=yes');
+                        });
+                    }
                 });
-            }
-        });
+</script>

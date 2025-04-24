@@ -39,7 +39,8 @@
                     </li>
                     <li><a href="/pricing" class="nav-link">Packages</a></li>
                     <li><a href="/booking-policy" class="nav-link">Our Policies</a></li>
-                    <li><a href="/backtoschool" class="nav-link">Promo/Offer</a>                        <div class="hot">HOT<br>
+                    <li><a href="/backtoschool" class="nav-link">Promo/Offer</a>
+                        <div class="hot">HOT<br>
                     </li>
                     <!-- Learn Dropdown -->
                     <li class="nav-item dropdown">
@@ -59,8 +60,8 @@
                             <li class="nav-item dropdown">
                                 <a href="/key-stage-2" class="dropdown-item">Key Stage 2 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="https://classroom.google.com/c/NzA4OTc5MTEyNTIw"
-                                            class="dropdown-item" target="_blank">Google Classroom</a></li>
+                                    <li><a href="https://classroom.google.com/c/NzA4OTc5MTEyNTIw" class="dropdown-item"
+                                            target="_blank">Google Classroom</a></li>
                                     <li><a href="https://www.splashlearn.com/" class="dropdown-item"
                                             target="_blank">Splash Learning</a></li>
                                     <li><a href="https://www.khanacademy.org/" class="dropdown-item"
@@ -70,8 +71,8 @@
                             <li class="nav-item dropdown">
                                 <a href="/key-stage-3" class="dropdown-item">Key Stage 3</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="https://classroom.google.com/c/NzExNTg0ODA3MjU2"
-                                            class="dropdown-item" target="_blank">Google Classroom</a></li>
+                                    <li><a href="https://classroom.google.com/c/NzExNTg0ODA3MjU2" class="dropdown-item"
+                                            target="_blank">Google Classroom</a></li>
                                     <li><a href="https://uk.splashlearn.com/signin#/student" class="dropdown-item"
                                             target="_blank">Splash Learning</a></li>
                                     <li><a href="https://www.khanacademy.org/teacher/class/ZFQJ2RC4/mastery/course-and-unit"
@@ -99,11 +100,14 @@
                         <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="/eleven-plus" class="nav-link">11+</a></li>
                         <li class="nav-item"><a href="/key-stage-1" class="nav-link">Key Stage 1</a></li>
-                        <li class="nav-item"><a href="/key-stage-2" class="nav-link">Key Stage 2</a> <span class="promo"> Promo</span></li>
-                        <li class="nav-item"><a href="/key-stage-3" class="nav-link">Key Stage 3</a><span class="promo"> Promo</span></li>
+                        <li class="nav-item"><a href="/key-stage-2" class="nav-link">Key Stage 2</a> <span
+                                class="promo"> Promo</span></li>
+                        <li class="nav-item"><a href="/key-stage-3" class="nav-link">Key Stage 3</a><span
+                                class="promo"> Promo</span></li>
                         <li class="nav-item"><a href="/pricing" class="nav-link">Packages</a></li>
                         <li class="nav-item"><a href="/booking-policy" class="nav-link">Our Policies</a></li>
-                        <li class="nav-item"><a href="/backtoschool" class="nav-link">Promo/Offer</a> <span class="hot"> HOT</span> </li>
+                        <li class="nav-item"><a href="/backtoschool" class="nav-link">Promo/Offer</a> <span
+                                class="hot"> HOT</span> </li>
 
                         <li class="nav-item dropdown">
                             <a href="#" class="start">Start Learning</a> <span class="new"> New</span>
@@ -160,7 +164,6 @@
 
 
 <style>
-
     .nav-item {
         position: relative;
     }
@@ -237,6 +240,7 @@
         border-radius: 4px;
 
     }
+
     .new {
         font-family: Inherit;
         color: #fff;

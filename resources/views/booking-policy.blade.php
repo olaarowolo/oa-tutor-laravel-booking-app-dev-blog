@@ -96,9 +96,8 @@
                     sessions, or unforeseen travel issues for in-person sessions), both parties will be notified
                     as soon as possible. Sessions will be rescheduled at no extra cost, or a full refund will be
                     provided if rescheduling is not possible.</p>
-                <div >
-                    <p class="text-2xl font-bold mb-4">Download to sign
-                        <a class="fa fa-download" aria-hidden="true"
+                <div>
+                    <p class="text-2xl font-bold mb-4">Download to sign<a class="fa fa-download" aria-hidden="true"
                             href="https://tutor.olaarowolo.com/assets/docs/oa-tutor-booking-policy.pdf" target="_blank">
                         </a>
                     </p>

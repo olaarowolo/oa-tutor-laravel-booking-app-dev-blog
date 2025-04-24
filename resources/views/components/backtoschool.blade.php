@@ -46,5 +46,4 @@
 
     </div>
 
-    @include('components.backtoschool-form')
 </section>

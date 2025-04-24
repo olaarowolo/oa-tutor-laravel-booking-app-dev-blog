@@ -4,20 +4,21 @@
 @include('partials.header')
 @include('components.slider')
 @section('content')
-@include('components.backtoschool-slider')
+    @include('components.backtoschool-slider')
 
-<!-- Services Offered -->
-<section class="hero2 px-5 py-5 mx-auto flex flex-wrap items-center justify-center" class="text-gray-600
+    <!-- Services Offered -->
+    <section class="hero2 px-5 py-5 mx-auto flex flex-wrap items-center justify-center" class="text-gray-600
  body-font"
-    id="services">
-    <div class="px-5 py-10 mx-auto">
-        <div class="flex flex-wrap -m-4">
-            <div class="blog xl:w-4/4 md:w-2/2" id="">
+        id="services">
+        <div class="px-5 py-10 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="blog xl:w-4/4 md:w-2/2" id="">
                     <section class="px-5 py-5 mx-auto flex flex-wrap items-center justify-center" id="">
                         <main class="max-w-5xl w-full">
                             <section class="mb-8">
                                 <h2 class="h3">Welcome to 11+ Tutoring</h2>
-                                <p class="blog-text">Thank you for inquiring about 11+ lessons with tutor.olaarowolo.com. I'm excited to support your child's
+                                <p class="blog-text">Thank you for inquiring about 11+ lessons with tutor.olaarowolo.com.
+                                    I'm excited to support your child's
                                     preparation for this important milestone.</p>
                             </section>
                             <section class="mb-8">
@@ -41,13 +42,15 @@
                             </section>
                             <section class="mb-8">
                                 <h2 class="text-2xl font-bold mb-4">Teaching Philosophy</h2>
-                                <p>Guided by principles of clear communication, practical applications, flexibility, support, discipline,
+                                <p>Guided by principles of clear communication, practical applications, flexibility,
+                                    support, discipline,
                                     and
                                     respect, I empower students to shape their paths to success.</p>
                             </section>
                             <section class="mb-8">
                                 <h2 class="text-2xl font-bold mb-4">Experience and Approach</h2>
-                                <p>With over seven years of international experience, I tailor my teaching to each student's pace and style,
+                                <p>With over seven years of international experience, I tailor my teaching to each student's
+                                    pace and style,
                                     providing unwavering support.</p>
                             </section>
                             <section class="mb-8">
@@ -60,13 +63,16 @@
                             </section>
                             <section class="mb-8">
                                 <h2 class="text-2xl font-bold mb-4">Free Initial Assessment</h2>
-                                <p>I offer the first hour at half the fee, starting with a practice question to assess your child's
+                                <p>I offer the first hour at half the fee, starting with a practice question to assess your
+                                    child's
                                     abilities.
-                                    We then begin lessons by reviewing this assessment and then cascade to 11+ lesson proper.</p>
+                                    We then begin lessons by reviewing this assessment and then cascade to 11+ lesson
+                                    proper.</p>
                             </section>
                             <section class="mb-8">
                                 <h2 class="text-2xl font-bold mb-4">Pricing</h2>
-                                <p>I charge £22 per hour but am open to moderate negotiation based on the outcome of our initial session.
+                                <p>I charge £22 per hour but am open to moderate negotiation based on the outcome of our
+                                    initial session.
                                 </p>
                             </section>
                         </main>
@@ -78,7 +84,7 @@
             </div>
             @include('components.why-us')
 
-</section>
+    </section>
 
 
 
