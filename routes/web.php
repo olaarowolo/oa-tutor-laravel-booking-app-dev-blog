@@ -6,6 +6,16 @@ use App\Http\Controllers\BookingPolicyController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\TuitionController;
 
+// Artisan Commands
+// Route::get('/install', function () {
+
+//     \Artisan::call('install');
+//     dd("Installed..");
+
+// });
+// End Artisan Commands
+
+
 // Home Pages
 Route::view('/', 'home');
 Route::view('/welcome', 'welcome');
