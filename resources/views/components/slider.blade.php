@@ -8,7 +8,7 @@
             </h1>
             <p class="h3">
                 We're here to help you unlock your child's potential with personalised  <abbr title="Accessibility">one-to-one and group lessons</abbr>
-                We are offering you a one-stop path to success
+                <br> We are offering you a one-stop path to success
 
             </p>
             <div class="btn-group">
