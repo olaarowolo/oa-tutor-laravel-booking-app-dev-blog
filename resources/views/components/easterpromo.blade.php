@@ -19,8 +19,8 @@
         <div class="right">
             <div class="pattern-bg"></div>
             <div class="img-box">
-                <img src="./assets/img/blog/hm-img.jpg" alt="OA Tutors Banner" class="hero-img">
-                
+                <img src="/assets/img/blog/hm-img.jpg" alt="OA Tutors Banner" class="hero-img">
+
             </div>
         </div>
     </div>
