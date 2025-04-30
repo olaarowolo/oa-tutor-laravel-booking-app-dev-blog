@@ -1502,16 +1502,17 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-                const paypalUrl = 'https://www.paypal.com/paypalme/olasunkanmiarowolo?country.x=GB&locale.x=en_GB';
-                const bookNowButtons = document.querySelectorAll('a');
+        const paypalUrl = 'https://www.paypal.com/paypalme/olasunkanmiarowolo?country.x=GB&locale.x=en_GB';
+        const bookNowButtons = document.querySelectorAll('a');
 
-                bookNowButtons.forEach(button => {
-                    if (button.textContent.trim() === 'Book Now') {
-                        button.addEventListener('click', function(e) {
-                            e.preventDefault();
-                            window.open(paypalUrl, 'paypalPopup',
-                                'width=600,height=700,scrollbars=yes');
-                        });
-                    }
+        bookNowButtons.forEach(button => {
+            if (button.textContent.trim() === 'Book Now') {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.open(paypalUrl, 'paypalPopup',
+                        'width=600,height=700,scrollbars=yes');
                 });
+            }
+        });
+    });
 </script>
