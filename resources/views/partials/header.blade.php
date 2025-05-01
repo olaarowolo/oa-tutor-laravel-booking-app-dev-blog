@@ -20,14 +20,18 @@
                 <ul class="desktop-nav">
                     <li><a href="/" class="nav-link">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Services <span class="promo"> Promo</span></a>
+                        <a href="#" class="nav-link">Services </a>
                         <ul class="dropdown-menu">
                             <li><a href="/key-stage-1" class="dropdown-item">KS-1</a></li>
-                            <li><a href="/key-stage-2" class="dropdown-item">KS-2 <span class="promo"> Promo</span></a>
+                            <li><a href="/key-stage-2" class="dropdown-item">KS-2 </a>
+                            </li>
+                            <li><a href="/key-stage-3" class="dropdown-item ">KS-3 </a>
+                            </li>
+                            {{-- <li><a href="/key-stage-2" class="dropdown-item">KS-2 <span class="promo"> Promo</span></a>
                             </li>
                             <li><a href="/key-stage-3" class="dropdown-item ">KS-3 <span class="promo">
                                         Promo</span></a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -39,9 +43,9 @@
                     </li>
                     <li><a href="/pricing" class="nav-link">Packages</a></li>
                     <li><a href="/booking-policy" class="nav-link">Our Policies</a></li>
-                    <li><a href="/backtoschool" class="nav-link">Promo/Offer</a>
+                    {{-- <li><a href="/backtoschool" class="nav-link">Promo/Offer</a>
                         <div class="hot">HOT<br>
-                    </li>
+                    </li> --}}
                     <!-- Learn Dropdown -->
                     <li class="nav-item dropdown">
                         <a href="#" class="start">Start Learning </a><span class="new">NEW</span>
@@ -100,16 +104,18 @@
                         <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="/eleven-plus" class="nav-link">11+</a></li>
                         <li class="nav-item"><a href="/key-stage-1" class="nav-link">Key Stage 1</a></li>
-                        <li class="nav-item"><a href="/key-stage-2" class="nav-link">Key Stage 2</a> <span
+                        <li class="nav-item"><a href="/key-stage-2" class="nav-link">Key Stage 2</a></li>
+                    <li class="nav-item"><a href="/key-stage-3" class="nav-link">Key Stage 3</a></li>
+                        {{-- <li class="nav-item"><a href="/key-stage-2" class="nav-link">Key Stage 2</a> <span
                                 class="promo"> Promo</span></li>
                         <li class="nav-item"><a href="/key-stage-3" class="nav-link">Key Stage 3</a><span
-                                class="promo"> Promo</span></li>
+                                class="promo"> Promo</span></li> --}}
                         <li class="nav-item"><a href="/pricing" class="nav-link">Packages</a></li>
                         <li class="nav-item"><a href="/booking-policy" class="nav-link">Our Policies</a></li>
-                        <li class="nav-item"><a href="/backtoschool" class="nav-link">Promo/Offer</a> <span
+                        {{-- <li class="nav-item"><a href="/backtoschool" class="nav-link">Promo/Offer</a> <span
                                 class="hot"> HOT</span> </li>
 
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown"> --}}
                             <a href="#" class="start">Start Learning</a> <span class="new"> New</span>
                             <ul class="dropdown-menu">
                                 <li class="nav-item dropdown">

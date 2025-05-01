@@ -48,9 +48,9 @@ Route::prefix('blog')->group(function () {
 // Misc Pages
 Route::view('/join-oa-tutors', 'docs.join-oa-tutors');
 Route::view('/recommended-product-lists', 'pages.recommended-product-lists');
-Route::view('/easterpromo', 'pages.easterpromo');
+// Route::view('/easterpromo', 'pages.easterpromo');
 Route::view('/pricing', 'pages.pricing');
-Route::view('/backtoschool/packages', 'pages.promo.packages');
+// Route::view('/backtoschool/packages', 'pages.promo.packages');
 
 
 // Back to School Promo
