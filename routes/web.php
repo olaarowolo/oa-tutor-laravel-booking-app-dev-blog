@@ -51,9 +51,9 @@ use App\Http\Controllers\TutorApplicationController;
 Route::get('/join-oa-tutors', [TutorApplicationController::class, 'showForm']);
 Route::post('/join-oa-tutors', [TutorApplicationController::class, 'submitForm'])->name('tutor.submit');
 Route::view('/recommended-product-lists', 'pages.recommended-product-lists');
-Route::view('/easterpromo', 'pages.easterpromo');
+// Route::view('/easterpromo', 'pages.easterpromo');
 Route::view('/pricing', 'pages.pricing');
-Route::view('/backtoschool/packages', 'pages.promo.packages');
+// Route::view('/backtoschool/packages', 'pages.promo.packages');
 
 
 // Back to School Promo
