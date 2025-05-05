@@ -46,7 +46,10 @@ Route::prefix('blog')->group(function () {
 });
 
 // Misc Pages
-Route::view('/join-oa-tutors', 'docs.join-oa-tutors');
+use App\Http\Controllers\TutorApplicationController;
+
+Route::get('/join-oa-tutors', [TutorApplicationController::class, 'showForm']);
+Route::post('/join-oa-tutors', [TutorApplicationController::class, 'submitForm'])->name('tutor.submit');
 Route::view('/recommended-product-lists', 'pages.recommended-product-lists');
 Route::view('/easterpromo', 'pages.easterpromo');
 Route::view('/pricing', 'pages.pricing');
