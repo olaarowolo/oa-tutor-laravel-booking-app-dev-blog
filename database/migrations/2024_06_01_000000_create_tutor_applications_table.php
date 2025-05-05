@@ -21,7 +21,7 @@ class CreateTutorApplicationsTable extends Migration
             $table->string('flexible_schedule');
             $table->string('tutoring_preference');
             $table->text('passion_description');
-            $table->string('subjects_proficient');
+            $table->text('subjects_proficient', 2000);
             $table->text('age_groups')->nullable();
             $table->text('communication_skills')->nullable();
             $table->text('reliability')->nullable();
