@@ -6,16 +6,6 @@ use App\Http\Controllers\BookingPolicyController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\TuitionController;
 
-// Artisan Commands
-// Route::get('/install', function () {
-
-//     \Artisan::call('install');
-//     dd("Installed..");
-
-// });
-// End Artisan Commands
-
-
 // Home Pages
 Route::view('/', 'home');
 Route::view('/welcome', 'welcome');
@@ -50,6 +40,29 @@ use App\Http\Controllers\TutorApplicationController;
 
 Route::get('/join-oa-tutors', [TutorApplicationController::class, 'showForm']);
 Route::post('/join-oa-tutors', [TutorApplicationController::class, 'submitForm'])->name('tutor.submit');
+
+
+
+// Artisan Commands
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/migrate-database', function () {
+    $output = [];
+    Artisan::call('migrate:status', ['--no-interaction' => true], $output);
+
+    $outputString = implode("\n", $output);
+    if (strpos($outputString, 'No pending migrations') !== false) {
+        return 'Nothing to migrate. Database is up to date.';
+    }
+
+    Artisan::call('migrate', ['--force' => true]);
+    return 'Database migrated successfully.';
+});
+// End Artisan Commands
+
+
+
 Route::view('/recommended-product-lists', 'pages.recommended-product-lists');
 // Route::view('/easterpromo', 'pages.easterpromo');
 Route::view('/pricing', 'pages.pricing');
