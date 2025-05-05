@@ -1,27 +1,28 @@
-<head>
+    <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OA Tutors | ...your trusted partner </title>
+    <title>@yield('title', 'OA Tutors | ...your trusted partner')</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets\img\oa-tutors-logo-blue-CF.jpg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets\img\oa-tutors-logo-blue-CF.jpg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets\img\oa-tutors-logo-blue-CF.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/oa-tutors-logo-blue-CF.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/oa-tutors-logo-blue-CF.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/oa-tutors-logo-blue-CF.jpg" />
     <!-- Meta Tags -->
     <meta name="description"
-        content="Unlock your child's potential with personalised one-to-one lessons. We are offering you a one-stop path to success." />
+        content="@yield('meta_description', 'Unlock your child\'s potential with personalised one-to-one lessons. We are offering you a one-stop path to success.')" />
+    <meta name="keywords" content="@yield('meta_keywords', 'tutoring, education, online tutoring, in-person tutoring, academic support')" />
     <meta property="og:url" content="https://www.tutor.olaarowolo.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="OA Tutors 📚" />
+    <meta property="og:title" content="@yield('title', 'OA Tutors 📚')" />
     <meta property="og:description"
-        content="Unlock your child's potential with personalised one-to-one lessons. We are offering you a one-stop path to success." />
-    <meta property="og:image" content="assets\img\oa-tutors-logo-blue-CF.jpg" />
+        content="@yield('meta_description', 'Unlock your child\'s potential with personalised one-to-one lessons. We are offering you a one-stop path to success.')" />
+    <meta property="og:image" content="assets/img/oa-tutors-logo-blue-CF.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="tutor.olaarowolo.com" />
     <meta property="twitter:url" content="https://www.tutor.olaarowolo.com/" />
-    <meta name="twitter:title" content="OA Tutors 📚" />
+    <meta name="twitter:title" content="@yield('title', 'OA Tutors 📚')" />
     <meta name="twitter:description"
-        content="Unlock your child's potential with personalised one-to-one lessons. We are offering you a one-stop path to success." />
+        content="@yield('meta_description', 'Unlock your child\'s potential with personalised one-to-one lessons. We are offering you a one-stop path to success.')" />
     <meta name="twitter:image" content="assets/favicon_io/oa-tutors-logo-white.png" />
 
     <!-- CSS Links -->
@@ -42,8 +43,6 @@
 
     <link rel="shortcut icon" href="{{ asset('assets/img/blog/oa-tutors-logo-white.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
-
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
