@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Coding for Kids')
 @include('components.head')
-@include('partials.header')
+@include('partials.navbar')
 @include('components.slider')
 @section('content')
     @include('components.backtoschool-slider')

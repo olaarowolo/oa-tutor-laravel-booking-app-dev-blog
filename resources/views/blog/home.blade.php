@@ -1,6 +1,6 @@
 @extends('layouts.blog')
 @section('title', 'Blog')
-{{-- @include('partials.header') --}}
+{{-- @include('partials.navbar') --}}
 @include('partials.blog.header')
 @section('content')
     <div class="main">

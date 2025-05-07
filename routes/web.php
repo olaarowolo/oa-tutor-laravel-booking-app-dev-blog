@@ -5,6 +5,10 @@ use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\BookingPolicyController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\TuitionController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\TutorApplicationController;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Artisan;
 
 // Home Pages
 Route::view('/', 'home');
@@ -29,24 +33,23 @@ Route::view('/privacy-policy', 'docs.privacy-policy');
 Route::get('/booking-policy', [BookingPolicyController::class, 'index']);
 Route::get('/policies', [PolicyController::class, 'showPolicies']);
 
-// Blog
-Route::prefix('blog')->group(function () {
-    Route::view('/', 'blog.home');
-    Route::view('/national-curriculum', 'blog.national_curriculum');
-});
+// Blog Public Routes
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.show');
+
+// Blog Management Routes (no auth middleware)
+Route::get('/blog/manage', [BlogController::class, 'manage'])->name('blog.manage');
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
+Route::post('/blog/store', [BlogController::class, 'store'])->name('blog.store');
+Route::get('/blog/{id}/edit', [BlogController::class, 'edit'])->name('blog.edit');
+Route::put('/blog/{id}', [BlogController::class, 'update'])->name('blog.update');
+Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('blog.destroy');
 
 // Misc Pages
-use App\Http\Controllers\TutorApplicationController;
-
 Route::get('/join-oa-tutors', [TutorApplicationController::class, 'showForm']);
 Route::post('/join-oa-tutors', [TutorApplicationController::class, 'submitForm'])->name('tutor.submit');
 
-
-
 // Artisan Commands
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Artisan;
-
 Route::get('/migrate-database', function () {
     $output = [];
     Artisan::call('migrate:status', ['--no-interaction' => true], $output);
@@ -59,15 +62,12 @@ Route::get('/migrate-database', function () {
     Artisan::call('migrate', ['--force' => true]);
     return 'Database migrated successfully.';
 });
-// End Artisan Commands
 
-
-
+// Other routes
 Route::view('/recommended-product-lists', 'pages.recommended-product-lists');
 // Route::view('/easterpromo', 'pages.easterpromo');
-Route::view('/pricing', 'pages.pricing');
+Route::view('/packages', 'pages.pricing');
 // Route::view('/backtoschool/packages', 'pages.promo.packages');
-
 
 // Back to School Promo
 Route::view('/backtoschool', 'backtoschool');
@@ -76,3 +76,16 @@ Route::post('/backtoschool/register', [TuitionController::class, 'register'])->n
 
 // Newsletter
 Route::post('/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
+
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\BookingController;
+
+use App\Http\Controllers\Auth\RegisterController;
+
+Auth::routes(['register' => false]);
+
+Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('register', [RegisterController::class, 'register']);
+
+Route::get('/booking/form', [BookingController::class, 'showForm'])->name('booking.form');
+Route::post('/booking/submit', [BookingController::class, 'submitBooking'])->name('booking.submit');

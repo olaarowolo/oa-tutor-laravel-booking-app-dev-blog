@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @include('components.head')
-@include('partials.header')
+@include('partials.navbar')
 @section('title', 'About OA Tutors')
 @include('components.slider')
 

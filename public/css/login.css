@@ -1,0 +1,98 @@
+/* Custom styles for login page */
+.login-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: var(--background-primary);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.1);
+  }
+
+  .login-container h1 {
+    text-align: center;
+    color: var(--foreground-primary);
+    margin-bottom: 1.5rem;
+  }
+
+  .login-error {
+    background-color: hsl(0, 100%, 90%);
+    border: 1px solid hsl(0, 80%, 70%);
+    color: hsl(0, 70%, 40%);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .login-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .login-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--foreground-tertiary);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--foreground-primary);
+    background: var(--background-secondary);
+    transition: border-color 0.3s ease;
+  }
+
+  .login-input:focus {
+    border-color: var(--accent);
+    outline: none;
+    box-shadow: 0 0 5px var(--accent);
+  }
+
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .login-btn:hover,
+  .login-btn:focus {
+    background: var(--foreground-secondary);
+    color: var(--action-primary);
+    outline: none;
+    cursor: pointer;
+  }
+
+  .login-forgot-password {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .login-forgot-password a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .login-forgot-password a:hover,
+  .login-forgot-password a:focus {
+    color: var(--foreground-secondary);
+    text-decoration: underline;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .login-container {
+      margin: 1.5rem 1rem;
+      padding: 1.5rem;
+    }
+  }

@@ -2,7 +2,7 @@
 @section('title', 'OA Tutors')
 @include('components.head')
 
-@include('partials.header')
+@include('partials.navbar')
 @section('content')
 
     <style>

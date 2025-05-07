@@ -41,7 +41,7 @@
                             <li><a href="/gcse" class="dropdown-item">GCSE</a></li>
                         </ul>
                     </li>
-                    <li><a href="/pricing" class="nav-link">Packages</a></li>
+                    <li><a href="/packages" class="nav-link">Packages</a></li>
                     <li><a href="/booking-policy" class="nav-link">Our Policies</a></li>
                     {{-- <li><a href="/backtoschool" class="nav-link">Promo/Offer</a>
                         <div class="hot">HOT<br>
@@ -110,7 +110,7 @@
                                 class="promo"> Promo</span></li>
                         <li class="nav-item"><a href="/key-stage-3" class="nav-link">Key Stage 3</a><span
                                 class="promo"> Promo</span></li> --}}
-                        <li class="nav-item"><a href="/pricing" class="nav-link">Packages</a></li>
+                        <li class="nav-item"><a href="/packages" class="nav-link">Packages</a></li>
                         <li class="nav-item"><a href="/booking-policy" class="nav-link">Our Policies</a></li>
                         {{-- <li class="nav-item"><a href="/backtoschool" class="nav-link">Promo/Offer</a> <span
                                 class="hot"> HOT</span> </li>

@@ -7,7 +7,7 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
-                'resources/css/pages/pricing.css', // ✅ Added this line
+                'resources/css/pages/packages.css', // ✅ Added this line
                 'resources/css/partials/footer.css', // ✅ Added this line
             ],
             refresh: true,

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @include('components.head')
-@include('partials.header')
+@include('partials.navbar')
 @include('components.slider')
 @include('components.backtoschool-slider')
 @section('content')

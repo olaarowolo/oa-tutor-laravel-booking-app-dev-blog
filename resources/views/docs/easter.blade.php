@@ -10,7 +10,7 @@
 <meta property="og:url" content="{{ url()->current() }}" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image">
-@include('partials.header')
+@include('partials.navbar')
 
 
 

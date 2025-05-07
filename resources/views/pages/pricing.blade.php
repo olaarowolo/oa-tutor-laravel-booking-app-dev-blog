@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @include('components.head')
-@include('partials.header')
+@include('partials.navbar')
 @section('title', 'Coding for Kids')
 @include('components.slider')
 @section('content')
-    @vite('resources/css/pages/pricing.css')
+    @vite('resources/css/pages/packages.css')
 
 
     <!-- KS1 PRICING START -->
@@ -43,10 +43,10 @@
                             <li>✔ Email Support Only</li>
                             <li>❌ No 1:1 Tutoring</li>
                         </ul>
-                        <a href="#"
-                            class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-                            Book Now
-                        </a>
+<a href="{{ route('booking.form') }}"
+    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
+    Book Now
+</a>
 
                     </div>
                 </li>
@@ -79,10 +79,10 @@
                             <li>✔ Homework Assistance</li>
 
                         </ul>
-                        <a href="#"
-                            class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
-                            Book Now
-                        </a>
+<a href="{{ route('booking.form') }}"
+    class="text-xl text-light font-semibold rounded-lg px-5 py-3 text-center border-2 border-light dark:border-dark hover:bg-light dark:hover:bg-dark hover:text-white transition-all duration-500">
+    Book Now
+</a>
                     </div>
                 </li>
 
@@ -357,65 +357,3 @@
 
 
 
-<script>
-    "use strict";
-
-    // TOGGLE DARK
-    const sunIcon = document.getElementById("sunIcon"),
-        moonIcon = document.getElementById("moonIcon"),
-        userTheme = localStorage.getItem("theme"),
-        toggleBtn = document.getElementById("light__to--dark");
-
-    // TOGGLING BTN ACTIVE CLASS
-    const btnToggle = () => {
-        moonIcon.classList.toggle("hidden");
-        sunIcon.classList.toggle("hidden");
-    };
-
-    // CHECKING SYSTEM & LOCALSTORAGE THEME
-    const themeCheck = () => {
-        if (userTheme === "dark") {
-            document.documentElement.classList.add("dark");
-            moonIcon.classList.add("hidden");
-            return;
-        }
-        sunIcon.classList.add("hidden");
-    };
-
-    // SWITCHING THEME CONDITIONALLY
-    const themeSwitch = () => {
-        if (document.documentElement.classList.contains("dark")) {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-            btnToggle();
-            return;
-        }
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-        btnToggle();
-    };
-
-    // MANUALLY SWITCHING THEME
-    toggleBtn.addEventListener("click", themeSwitch);
-
-    // WINDOW RELOAD THEME CHECK
-    themeCheck();
-    // TOGGLE DARK
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const paypalUrl = 'https://www.paypal.com/paypalme/olasunkanmiarowolo?country.x=GB&locale.x=en_GB';
-        const bookNowButtons = document.querySelectorAll('a.calendly-popup, a');
-
-        bookNowButtons.forEach(button => {
-            if (button.textContent.trim() === 'Book Now') {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    window.open(paypalUrl, 'paypalPopup',
-                    'width=600,height=700,scrollbars=yes');
-                });
-            }
-        });
-    });
-</script>

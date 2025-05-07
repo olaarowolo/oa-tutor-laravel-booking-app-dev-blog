@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @include('components.head')
-@include('partials.header')
+@include('partials.navbar')
 @section('title', 'Key Stage 1 (KS1)')
 {{-- @include('components.slider') --}}
 @section('content')

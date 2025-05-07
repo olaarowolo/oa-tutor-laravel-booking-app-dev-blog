@@ -1,0 +1,75 @@
+/* Custom styles for login and register forms */
+.login-container, .register-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--background-primary, #fff);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.register-card, .login-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 2rem;
+  background-color: var(--background-secondary, #f9f9f9);
+}
+
+.register-header, .login-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary, #333);
+  text-align: center;
+}
+
+.register-body, .login-body {
+  padding: 1rem 0;
+}
+
+.register-form, .login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-input, .login-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.register-input:focus, .login-input:focus {
+  border-color: var(--accent, #007bff);
+  outline: none;
+  box-shadow: 0 0 5px var(--accent, #007bff);
+}
+
+.btn-primary {
+  background-color: var(--accent, #007bff);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--accent, #007bff), 10%);
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: var(--text-secondary, #555);
+}

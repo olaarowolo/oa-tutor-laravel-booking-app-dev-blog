@@ -8,7 +8,7 @@
 
 @section('title', 'Coding for Kids')
 @include('components.head')
-@include('partials.header')
+@include('partials.navbar')
 @include('components.easterpromo')
 
 @section('content')
@@ -300,7 +300,7 @@
                 <p><strong>Group Sessions:</strong> Originally <s>£110/month</s> — <strong>Now 40% OFF: Just
                         £60/month</strong>!</p>
                 <p><strong>One-on-One Sessions:</strong> Also available. Visit our <a
-                        href="https://tutor.olaarowolo.com/pricing" class="text-blue-600 underline">pricing page</a> for
+                        href="https://tutor.olaarowolo.com/packages" class="text-blue-600 underline">pricing page</a> for
                     full details.</p>
                 <p class="mt-2">Now is the best time to enrol your child and get them ready for a confident return to
                     school.</p>
@@ -1500,19 +1500,3 @@
     </style>
 @endsection
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const paypalUrl = 'https://www.paypal.com/paypalme/olasunkanmiarowolo?country.x=GB&locale.x=en_GB';
-        const bookNowButtons = document.querySelectorAll('a');
-
-        bookNowButtons.forEach(button => {
-            if (button.textContent.trim() === 'Book Now') {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    window.open(paypalUrl, 'paypalPopup',
-                        'width=600,height=700,scrollbars=yes');
-                });
-            }
-        });
-    });
-</script>

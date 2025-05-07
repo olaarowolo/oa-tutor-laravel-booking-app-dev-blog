@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @include('components.head')
-@include('partials.header')
+@include('partials.navbar')
 @section('title', 'Back to School Registration (Summer Term 2025)')
 {{-- @include('components.slider') --}}
 @section('content')

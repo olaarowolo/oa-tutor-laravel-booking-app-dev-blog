@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('components.blog.head')
+<head>
+    @include('components.blog.head')
+    <link rel="stylesheet" href="{{ asset('css/blog-custom.css') }}">
+</head>
 
 <body class="light-theme">
-    @include('partials.blog.nav')
+    @include('partials.navbar')
+
     <main>
         @include('partials.blog.profile')
         @yield('content')
