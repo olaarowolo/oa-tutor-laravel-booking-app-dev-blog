@@ -55,6 +55,8 @@
                             <li class="nav-item dropdown">
                                 <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
                                 <ul class="dropdown-menu">
+                                    <li><a href="/learnings/a-z#" class="dropdown-item"
+                                            target="_blank">Learn Letters</a></li>
                                     <li><a href="https://classroom.google.com/" class="dropdown-item"
                                             target="_blank">Google Classroom</a></li>
                                     <li><a href="https://www.splashlearn.com/" class="dropdown-item"
@@ -146,6 +148,8 @@
                                 <li class="nav-item dropdown">
                                     <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
                                     <ul class="dropdown-menu">
+                                        <li><a href="/learnings/a-z#" class="dropdown-item"
+                                            target="_blank">Learn Letters</a></li>
                                         <li><a href="https://classroom.google.com/" class="dropdown-item"
                                                 target="_blank">Google Classroom</a></li>
                                         <li><a href="https://www.splashlearn.com/" class="dropdown-item"

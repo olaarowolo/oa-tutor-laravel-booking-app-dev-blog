@@ -89,3 +89,11 @@ Route::post('register', [RegisterController::class, 'register']);
 
 Route::get('/booking/form', [BookingController::class, 'showForm'])->name('booking.form');
 Route::post('/booking/submit', [BookingController::class, 'submitBooking'])->name('booking.submit');
+
+Route::view('/learnings/a-z', 'learnings.a-z')->name('learnings.az');
+Route::view('/learnings/ks1', 'learnings.ks1')->name('learnings.ks1');
+
+Route::middleware(['auth'])->group(function () {
+    Route::view('/dashboard', 'dashboard')->name('dashboard');
+    Route::view('/profile/edit', 'profile.edit')->name('profile.edit');
+});
