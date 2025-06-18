@@ -53,6 +53,8 @@
                             <li class="nav-item dropdown">
                                 <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
                                 <ul class="dropdown-menu">
+                                    <li><a href="/learnings/a-z#" class="dropdown-item"
+                                        target="_blank">Learn Letters</a></li>
                                     <li><a href="https://classroom.google.com/" class="dropdown-item"
                                             target="_blank">Google Classroom</a></li>
                                     <li><a href="https://www.splashlearn.com/" class="dropdown-item"
@@ -121,6 +123,8 @@
                                 <li class="nav-item dropdown">
                                     <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
                                     <ul class="dropdown-menu">
+                                        <li><a href="/learnings/a-z#" class="dropdown-item"
+                                            target="_blank">Learn Letters</a></li>
                                         <li><a href="https://classroom.google.com/" class="dropdown-item"
                                                 target="_blank">Google Classroom</a></li>
                                         <li><a href="https://www.splashlearn.com/" class="dropdown-item"
@@ -288,5 +292,14 @@
         vertical-align: middle;
         border-radius: 4px;
 
+    }
+
+    /* Show dropdown menu when toggled */
+    .dropdown-menu.show {
+        display: block !important;
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+        padding-left: 1rem;
     }
 </style>

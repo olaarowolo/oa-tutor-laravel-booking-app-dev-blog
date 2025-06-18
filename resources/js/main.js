@@ -36,7 +36,19 @@ let mainF = (e) => {
   for (var i = 0; i < allButtons.length; i++)
     allButtons[i].addEventListener("click", getButtons );
   for (var i = 0; i < switchBtn.length; i++)
-    switchBtn[i].addEventListener("click", changeForm)
+    switchBtn[i].addEventListener("click", changeForm);
+
+  // Dropdown toggle for mobile
+  const dropdownParents = document.querySelectorAll('.mobile-nav .nav-item.dropdown > a');
+  dropdownParents.forEach(parent => {
+    parent.addEventListener('click', function(e) {
+      e.preventDefault();
+      const dropdownMenu = this.nextElementSibling;
+      if (dropdownMenu) {
+        dropdownMenu.classList.toggle('show');
+      }
+    });
+  });
 }
 
 window.addEventListener("load", mainF);
