@@ -118,6 +118,29 @@
             #letter {
                 font-size: 50vw;
             }
+            #fullscreenButton {
+                display: none;
+            }
+            #speakButton {
+                display: inline-block;
+                font-size: 12px;
+                padding: 6px 8px;
+            }
+            #phonicsButton {
+                display: inline-block;
+                font-size: 12px;
+                padding: 6px 8px;
+            }
+            #toggleSpeakButton {
+                display: inline-block;
+                font-size: 12px;
+                padding: 6px 8px;
+            }
+            #togglePhonicsButton {
+                display: inline-block;
+                font-size: 12px;
+                padding: 6px 8px;
+            }
         }
     </style>
 </head>
