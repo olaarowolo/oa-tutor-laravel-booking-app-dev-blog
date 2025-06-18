@@ -47,6 +47,49 @@
                         <div class="hot">HOT<br>
                     </li> --}}
                     <!-- Learn Dropdown -->
+                    @guest
+                    <li class="nav-item dropdown">
+                        <a href="#" class="start" id="start-learning-guest">Start Learning </a><span class="new">NEW</span>
+                        <ul class="dropdown-menu" id="start-learning-dropdown-guest" style="display:none;">
+                            <!-- Dropdown content same as before -->
+                            <li class="nav-item dropdown">
+                                <a href="/key-stage-1" class="dropdown-item">Key Stage 1</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/learnings/a-z#" class="dropdown-item"
+                                        target="_blank">Learn Letters</a></li>
+                                    <li><a href="https://classroom.google.com/" class="dropdown-item"
+                                            target="_blank">Google Classroom</a></li>
+                                    <li><a href="https://www.splashlearn.com/" class="dropdown-item"
+                                            target="_blank">Splash Learning</a></li>
+                                    <li><a href="https://www.khanacademy.org/" class="dropdown-item"
+                                            target="_blank">Khan Academy</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/key-stage-2" class="dropdown-item">Key Stage 2 </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://classroom.google.com/c/NzA4OTc5MTEyNTIw" class="dropdown-item"
+                                            target="_blank">Google Classroom</a></li>
+                                    <li><a href="https://www.splashlearn.com/" class="dropdown-item"
+                                            target="_blank">Splash Learning</a></li>
+                                    <li><a href="https://www.khanacademy.org/" class="dropdown-item"
+                                            target="_blank">Khan Academy</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/key-stage-3" class="dropdown-item">Key Stage 3</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://classroom.google.com/c/NzExNTg0ODA3MjU2" class="dropdown-item"
+                                            target="_blank">Google Classroom</a></li>
+                                    <li><a href="https://uk.splashlearn.com/signin#/student" class="dropdown-item"
+                                            target="_blank">Splash Learning</a></li>
+                                    <li><a href="https://www.khanacademy.org/teacher/class/ZFQJ2RC4/mastery/course-and-unit"
+                                            class="dropdown-item" target="_blank">Khan Academy</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    @else
                     <li class="nav-item dropdown">
                         <a href="#" class="start">Start Learning </a><span class="new">NEW</span>
                         <ul class="dropdown-menu">
@@ -87,6 +130,7 @@
                             </li>
                         </ul>
                     </li>
+                    @endguest
                 </ul>
 
                 <button class="theme-btn theme-btn-desktop light">
@@ -94,6 +138,38 @@
                     <ion-icon name="sunny" class="sun"></ion-icon>
                 </button>
             </div>
+
+            @guest
+            <x-modal name="login-prompt" maxWidth="sm" focusable>
+                <div class="p-6">
+                    <h2 class="text-lg font-semibold mb-4">Please log in to start learning</h2>
+                    <p class="mb-4">You need to be logged in to access the learning resources.</p>
+                    <a href="/login" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Log In</a>
+                </div>
+            </x-modal>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const startLearningLink = document.getElementById('start-learning-guest');
+                    const dropdownMenu = document.getElementById('start-learning-dropdown-guest');
+
+                    function openLoginPrompt() {
+                        window.dispatchEvent(new CustomEvent('open-modal', { detail: 'login-prompt' }));
+                    }
+
+                    if (startLearningLink) {
+                        startLearningLink.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            openLoginPrompt();
+                        });
+
+                        startLearningLink.addEventListener('mouseenter', function (e) {
+                            e.preventDefault();
+                            openLoginPrompt();
+                        });
+                    }
+                });
+            </script>
 
             <!-- MOBILE NAVIGATION -->
             <div class="mobile-nav">

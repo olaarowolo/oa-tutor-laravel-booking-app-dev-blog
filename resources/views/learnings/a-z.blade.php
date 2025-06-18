@@ -112,35 +112,53 @@
             text-align: center;
             user-select: none;
             transition: transform 0.2s;
+            padding-bottom: 200px
         }
 
+        #phonicsDisplay {
+                position: absolute;
+                bottom: 100px;
+                width: 100%;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+                transition: transform 0.2s;
+            }
         @media (max-width: 600px) {
             #letter {
                 font-size: 50vw;
             }
+
             #fullscreenButton {
-                display: none;
+                display: none
             }
-            #speakButton {
-                display: inline-block;
-                font-size: 12px;
-                padding: 6px 8px;
-            }
-            #phonicsButton {
-                display: inline-block;
-                font-size: 12px;
-                padding: 6px 8px;
-            }
-            #toggleSpeakButton {
-                display: inline-block;
-                font-size: 12px;
-                padding: 6px 8px;
-            }
+
+            #speakButton,
+            #phonicsButton,
+            #toggleSpeakButton,
             #togglePhonicsButton {
-                display: inline-block;
+                display: block;
                 font-size: 12px;
                 padding: 6px 8px;
+                margin: 4px auto;
+                max-width: 200px;
+                width: 100%;
             }
+
+            #phonicsDisplay {
+                position: absolute;
+                bottom: 100px;
+                width: 100%;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+                transition: transform 0.2s;
+            }
+
         }
     </style>
 </head>
@@ -156,14 +174,15 @@
     <div class="controls">
         <button id="speakButton">🔊 Say Letter</button>
         <button id="phonicsButton">🔡 Say Phonics</button>
-        <button id="toggleSpeakButton">Disable Say Letter</button>
-        <button id="togglePhonicsButton">Disable Say Phonics</button>
+     
         <button id="fullscreenButton">⛶ Fullscreen</button>
     </div>
 
     <div id="prompt">🎉 Click or tap the screen to get a letter! 🎉</div>
     <div id="letterContainer">
         <div id="letter"></div>
+        <div id="phonicsDisplay"></div>
+
     </div>
 
     <script>
@@ -210,8 +229,19 @@
         function sayLetter() {
             const letter = letterDiv.textContent?.charAt(0);
             if (!letter) return;
+
             const utter = new SpeechSynthesisUtterance(letter);
             speechSynthesis.speak(utter);
+
+            // Display letter text
+            const displayDiv = document.getElementById("phonicsDisplay");
+            displayDiv.textContent = letter;
+            displayDiv.style.opacity = "1";
+
+            // Fade out after 2.5 seconds
+            setTimeout(() => {
+                displayDiv.style.opacity = "0";
+            }, 2500);
         }
 
         function sayPhonics() {
@@ -219,40 +249,56 @@
             if (!letter) return;
 
             const phonicsMap = {
-                A: "æ, eɪ, ɑː, ə",
-                B: "b",
-                C: "k, s, tʃ",
-                D: "d, dʒ",
-                E: "ɛ, iː, ə",
-                F: "f",
-                G: "g, dʒ, ʒ",
-                H: "h, silent",
-                I: "ɪ, aɪ, iː",
-                J: "dʒ",
-                K: "k, silent",
-                L: "l",
-                M: "m",
-                N: "n, ŋ",
-                O: "ɒ, oʊ, əʊ",
-                P: "p, f",
-                Q: "kw",
-                R: "r, silent",
-                S: "s, z, ʃ",
-                T: "t, ʃ, tʃ",
-                U: "ʌ, juː, uː",
-                V: "v",
-                W: "w, silent",
-                X: "ks, gz, z",
-                Y: "j, ɪ, aɪ",
-                Z: "z, ʒ"
+                A: ["ah"],
+                B: ["buh"],
+                C: ["kuh", "suh"],
+                D: ["duh"],
+                E: ["eh", "ee"],
+                F: ["fff"],
+                G: ["guh", "juh"],
+                H: ["huh"],
+                I: ["ih", "eye"],
+                J: ["juh"],
+                K: ["kuh"],
+                L: ["luh"],
+                M: ["mmm"],
+                N: ["nnn"],
+                O: ["oh", "aw"],
+                P: ["puh"],
+                Q: ["kwuh"],
+                R: ["ruh"],
+                S: ["sss"],
+                T: ["tuh"],
+                U: ["uh", "oo"],
+                V: ["vuh"],
+                W: ["wuh"],
+                X: ["ks", "zuh"],
+                Y: ["yuh", "ih"],
+                Z: ["zzz"]
             };
 
-            const phonics = phonicsMap[letter];
-            if (phonics) {
-                const utter = new SpeechSynthesisUtterance(phonics);
+
+            const phonicsOptions = phonicsMap[letter];
+            if (phonicsOptions) {
+                const randomPhonic = phonicsOptions[Math.floor(Math.random() * phonicsOptions.length)];
+                const utter = new SpeechSynthesisUtterance(randomPhonic);
+                utter.rate = 0.7; // Reduced speed for better clarity
                 speechSynthesis.speak(utter);
+
+                // Display phonics text
+                const displayDiv = document.getElementById("phonicsDisplay");
+                displayDiv.textContent = randomPhonic;
+                displayDiv.style.opacity = "1";
+
+                // Fade out after 2.5 seconds
+                setTimeout(() => {
+                    displayDiv.style.opacity = "0";
+                }, 2500);
             }
         }
+
+
+
 
         speakButton.addEventListener("click", (e) => {
             e.stopPropagation();
