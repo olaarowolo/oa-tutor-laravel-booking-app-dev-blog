@@ -14,7 +14,7 @@
         body {
             height: 100%;
             margin: 0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: 'Comic Sans MS', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             background-color: #fdf6e3;
             overflow: hidden;
         }
