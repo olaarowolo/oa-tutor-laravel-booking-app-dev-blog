@@ -174,7 +174,8 @@
     <div class="controls">
         <button id="speakButton">🔊 Say Letter</button>
         <button id="phonicsButton">🔡 Say Phonics</button>
-     
+     <button id="infoButton">🔊 Letter & Sound Info</button>
+
         <button id="fullscreenButton">⛶ Fullscreen</button>
     </div>
 
@@ -298,6 +299,63 @@
         }
 
 
+const infoButton = document.getElementById("infoButton");
+
+const phonicsExamplesMap = {
+    A: [{ sound: "ah", example: "apple" }, { sound: "ay", example: "ape" }],
+    B: [{ sound: "buh", example: "bat" }],
+    C: [{ sound: "kuh", example: "cat" }, { sound: "suh", example: "city" }],
+    D: [{ sound: "duh", example: "dog" }],
+    E: [{ sound: "eh", example: "egg" }, { sound: "ee", example: "tree" }],
+    F: [{ sound: "fff", example: "fish" }],
+    G: [{ sound: "guh", example: "goat" }, { sound: "juh", example: "giant" }],
+    H: [{ sound: "huh", example: "hat" }],
+    I: [{ sound: "ih", example: "insect" }, { sound: "eye", example: "ice" }],
+    J: [{ sound: "juh", example: "jam" }],
+    K: [{ sound: "kuh", example: "kite" }],
+    L: [{ sound: "luh", example: "leg" }],
+    M: [{ sound: "mmm", example: "man" }],
+    N: [{ sound: "nnn", example: "net" }],
+    O: [{ sound: "oh", example: "orange" }, { sound: "aw", example: "off" }],
+    P: [{ sound: "puh", example: "pen" }],
+    Q: [{ sound: "kwuh", example: "queen" }],
+    R: [{ sound: "ruh", example: "rat" }],
+    S: [{ sound: "sss", example: "sun" }],
+    T: [{ sound: "tuh", example: "top" }],
+    U: [{ sound: "uh", example: "umbrella" }, { sound: "oo", example: "put" }],
+    V: [{ sound: "vuh", example: "van" }],
+    W: [{ sound: "wuh", example: "wig" }],
+    X: [{ sound: "ks", example: "box" }, { sound: "zuh", example: "xylophone" }],
+    Y: [{ sound: "yuh", example: "yellow" }, { sound: "ih", example: "myth" }],
+    Z: [{ sound: "zzz", example: "zebra" }]
+};
+
+function sayLetterAndSoundInfo() {
+    const letter = letterDiv.textContent?.charAt(0).toUpperCase();
+    if (!letter) return;
+
+    const options = phonicsExamplesMap[letter];
+    if (options) {
+        const randomOption = options[Math.floor(Math.random() * options.length)];
+        const sentence = `This letter is ${letter}. And the sound is ${randomOption.sound}. As in ${randomOption.example}.`;
+        const utter = new SpeechSynthesisUtterance(sentence);
+        utter.rate = 0.7;
+        speechSynthesis.speak(utter);
+
+        const displayDiv = document.getElementById("phonicsDisplay");
+        displayDiv.textContent = sentence;
+        displayDiv.style.opacity = "1";
+
+        setTimeout(() => {
+            displayDiv.style.opacity = "0";
+        }, 4000);
+    }
+}
+
+infoButton.addEventListener("click", (e) => {
+    e.stopPropagation();
+    sayLetterAndSoundInfo();
+});
 
 
         speakButton.addEventListener("click", (e) => {
