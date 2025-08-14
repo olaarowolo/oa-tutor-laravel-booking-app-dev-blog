@@ -1,0 +1,58 @@
+name: 🚀 FTP Deployment
+
+on:
+  push:
+    branches:
+      - laravel-web-app
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 📤 Upload Files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT || 21 }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR || "/tutor.olaarowolo.com" }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/vendor/**
+            **/.env
+            **/storage/logs/**
+            **/storage/framework/cache/**
+            **/storage/framework/sessions/**
+            **/storage/framework/views/**
+            **/bootstrap/cache/**
+            **/tests/**
+            **/workflows/**
+            **/.DS_Store
+            **/composer.lock
+            **/package-lock.json
+            **/README.md
+            **/artisan
+            **/phpunit.xml
+            **/postcss.config.js
+            **/tailwind.config.js
+            **/vite.config.js
+
+      - name: 🛠️ Execute Remote Commands via FTP
+        uses: appleboy/ftp-action@v0.1.1
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT || 21 }}
+          script: |
+            cd ${{ secrets.FTP_SERVER_DIR || "/tutor.olaarowolo.com" }}
+            composer install --no-interaction --prefer-dist --optimize-autoloader
+            php artisan migrate --force
+            php artisan config:cache
