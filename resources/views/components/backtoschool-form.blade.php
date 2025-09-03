@@ -62,6 +62,7 @@
                     <select id="stage" name="stage" required
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-700 dark:border-gray-600 dark:text-white">
                         <option value="">-- Select Stage --</option>
+                        <option value="KS2">KS1</option>
                         <option value="KS2">KS2</option>
                         <option value="KS3">KS3</option>
                         <option value="11+">11+</option>
