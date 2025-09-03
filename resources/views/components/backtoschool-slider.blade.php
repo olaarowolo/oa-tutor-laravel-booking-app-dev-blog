@@ -1,10 +1,16 @@
 <section
     class="px-4 py-10 mx-auto flex flex-col items-center justify-center min-h-[70vh] background rounded-md shadow-md"
     id="register">
-    <div
-        class="w-full max-w-[900px] mx-auto border-2 border-[#0077cc] rounded-xl overflow-hidden font-['Segoe_UI'] flex flex-col md:flex-row bg-[#f9f9f9]">
+<div
+        class="w-full max-w-[900px] mx-auto border-2 border-[#0077cc] rounded-xl overflow-hidden font-['Segoe_UI'] flex flex-col lg:flex-row bg-[#f9f9f9]">
         <!-- Left Column -->
-        <div class="w-full md:w-1/2 p-6 bg-white">
+        <div class="w-full lg:w-2/2 bg-[#eef6fb] flex items-center justify-center p-4">
+            <img src="{{ asset('assets/img/fliers/Back_to_School-Summer2025.png') }}" alt="Back to School Tuition"
+                class="max-w-full rounded-lg">
+        </div>
+
+        <!-- Right Column -->
+         <div class="w-full lg:w-2/2 p-6 bg-white">
             <h2 class="text-[#0077cc] mb-2 text-xl md:text-2xl font-semibold">Back to School Tuition</h2>
             <h3 class="text-gray-800 text-lg md:text-xl">KS2 | KS3 | 11+ | GCSE</h3>
             <p class="mt-4 text-sm leading-relaxed text-gray-600">
@@ -34,12 +40,6 @@
                 </a>
             </div>
             <p class="mt-4 text-xs text-gray-500" id="register-form">Call/WhatsApp: 07721347084, 07487397751</p>
-        </div>
-
-        <!-- Right Column -->
-        <div class="w-full md:w-1/2 bg-[#eef6fb] flex items-center justify-center p-4">
-            <img src="{{ asset('assets/img/fliers/Back_to_School-Summer2025.png') }}" alt="Back to School Tuition"
-                class="max-w-full rounded-lg">
         </div>
     </div>
 

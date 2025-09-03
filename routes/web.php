@@ -77,6 +77,19 @@ Route::post('/backtoschool/register', [TuitionController::class, 'register'])->n
 // Newsletter
 Route::post('/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
 
+// Test Email Route
+Route::get('/test-email', function () {
+    try {
+        \Illuminate\Support\Facades\Mail::raw('This is a test email from OA Tutor Laravel app!', function ($message) {
+            $message->to('oatutors@gmail.com') // Replace with your test email
+                    ->subject('Test Email from OA Tutor');
+        });
+        return 'Test email sent successfully! Check your inbox.';
+    } catch (\Exception $e) {
+        return 'Email failed: ' . $e->getMessage();
+    }
+});
+
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\BookingController;
 
