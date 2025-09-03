@@ -19,8 +19,10 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT || 21 }}
-          server-dir: ${{ secrets.FTP_SERVER_DIR || "/tutor.olaarowolo.com" }}
+          port: ${{ secrets.FTP_PORT }}
+          protocol: ftps
+          server-dir: /
+          local-dir: ./
           exclude: |
             **/.git*
             **/.git*/**
@@ -52,7 +54,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT || 21 }}
           script: |
-            cd ${{ secrets.FTP_SERVER_DIR || "/tutor.olaarowolo.com" }}
+            cd /tutor.olaarowolo.com"
             composer install --no-interaction --prefer-dist --optimize-autoloader
             php artisan migrate --force
             php artisan config:cache

@@ -4,9 +4,6 @@
 @section('title', 'Coding for Kids')
 @include('components.slider')
 @section('content')
-    @vite('resources/css/pages/packages.css')
-
-
     <!-- KS1 PRICING START -->
     <section id="pricing-ks1" class="pricing-1 md:py-24 py-12  bg-gray-100 dark:bg-[#fffdfd]">
         <div class="container">

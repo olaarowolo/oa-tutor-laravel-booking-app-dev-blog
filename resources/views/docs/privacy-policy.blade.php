@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
 @include('components.head')
+@include('partials.navbar')
 
 @section('title', 'Privacy Policy')
 

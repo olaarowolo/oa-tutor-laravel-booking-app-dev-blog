@@ -28,11 +28,7 @@
                             </li>
                             <li><a href="/key-stage-3" class="dropdown-item ">KS-3 </a>
                             </li>
-                            {{-- <li><a href="/key-stage-2" class="dropdown-item">KS-2 <span class="promo"> Promo</span></a>
-                            </li>
-                            <li><a href="/key-stage-3" class="dropdown-item ">KS-3 <span class="promo">
-                                        Promo</span></a>
-                            </li> --}}
+
                         </ul>
                     </li>
                     <li class="nav-item dropdown">

@@ -1,7 +1,6 @@
 @extends('layouts.app')
-
 @include('components.head')
-
+@include('partials.navbar')
 @section('title', 'Booking Policy')
 
 @section('content')
@@ -21,7 +20,6 @@
                 <ul class="list-disc pl-6 space-y-2">
                     <li>List 1.</li>
                     <li>List 2.</li>
-                    <li>List 3.</li>
 
                 </ul>
 

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @include('components.head')
+@include('partials.navbar')
 @section('title', 'Become an OA Tutor')
 @section('meta_description', 'Join OA Tutors as a passionate and flexible tutor. Apply now to make a difference in
     students\' lives with online or in-person tutoring opportunities.')
